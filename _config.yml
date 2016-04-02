@@ -1,0 +1,17 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Internet Neurocinematics Database
+description: > # this means to ignore newlines until "baseurl:"
+  The objective of this project is to build a social data repository for the Internet Neurocinematics Database (INcDb), which is a database of functional magnetic resource imaging (fMRI) data collected while people watch full length movies.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://students.cs.ucl.ac.uk/2015/group35" # the base hostname & protocol for your site
+github_username:  UCL-CS35
+
+# Build settings
+markdown: kramdown
