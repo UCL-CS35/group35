@@ -9,7 +9,7 @@
 title: Internet Neurocinematics Database
 description: > # this means to ignore newlines until "baseurl:"
   The objective of this project is to build a social data repository for the Internet Neurocinematics Database (INcDb), which is a database of functional magnetic resource imaging (fMRI) data collected while people watch full length movies.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/2015/group35" # the subpath of your site, e.g. /blog
 url: "http://students.cs.ucl.ac.uk/2015/group35" # the base hostname & protocol for your site
 github_username:  UCL-CS35
 

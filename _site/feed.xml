@@ -4,10 +4,10 @@
     <title>Internet Neurocinematics Database</title>
     <description>The objective of this project is to build a social data repository for the Internet Neurocinematics Database (INcDb), which is a database of functional magnetic resource imaging (fMRI) data collected while people watch full length movies.
 </description>
-    <link>http://students.cs.ucl.ac.uk/2015/group35/</link>
-    <atom:link href="http://students.cs.ucl.ac.uk/2015/group35/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Apr 2016 18:34:56 +0100</pubDate>
-    <lastBuildDate>Sat, 02 Apr 2016 18:34:56 +0100</lastBuildDate>
+    <link>http://students.cs.ucl.ac.uk/2015/group35/2015/group35/</link>
+    <atom:link href="http://students.cs.ucl.ac.uk/2015/group35/2015/group35/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 02 Apr 2016 20:27:19 +0100</pubDate>
+    <lastBuildDate>Sat, 02 Apr 2016 20:27:19 +0100</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Sat, 02 Apr 2016 15:14:23 +0100</pubDate>
-        <link>http://students.cs.ucl.ac.uk/2015/group35/jekyll/update/2016/04/02/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://students.cs.ucl.ac.uk/2015/group35/jekyll/update/2016/04/02/welcome-to-jekyll.html</guid>
+        <link>http://students.cs.ucl.ac.uk/2015/group35/2015/group35/jekyll/update/2016/04/02/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://students.cs.ucl.ac.uk/2015/group35/2015/group35/jekyll/update/2016/04/02/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
