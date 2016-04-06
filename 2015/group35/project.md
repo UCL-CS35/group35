@@ -121,6 +121,8 @@ permalink: /project/
 
 ! TODO similar gantt chart as term 1
 
+! Management of the project including work packages completed between the team members
+
 ## Bi-Weekly Reports
 The list of reports are written fortnightly to record the progress made by the group. The report include meeting minutes, problems faced, tasks completed, tasks to be done and a paragraph by each member on his personal contribution.
 

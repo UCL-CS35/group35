@@ -10,6 +10,11 @@ As individuals who don't have any knowledge on neuroscience, we also used oursel
 
 The following list of requirements had been identified by the group and approved by our client, Dr. Skipper. Requirements are described using 'MoSCoW' approach, Must Have, Should Have, Could Have and Won't Have. The requirements are also label as Functional (what the system should do) and Non-Functional (how the system is supposed to) requirements.
 
+**Final Requirements identified for the Final Proof of Concept**
+
+TODO(Donovan): Table with finalised requirements and links to show requirement fulfilled 
+
+**Initial Requirements**
 <table>
 	<thead>
 	  <tr>
