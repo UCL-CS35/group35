@@ -78,10 +78,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #34495e;
   text-decoration: none; }
   a:visited {
-    color: #1756a9; }
+    color: #19232d; }
   a:hover {
     color: #111;
     text-decoration: underline; }
@@ -90,12 +90,12 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: #828282;
-  border-left: 4px solid #e8e8e8;
+  color: #34495e;
+  border-left: 4px solid #34495e;
   padding-left: 15px;
   font-size: 18px;
   letter-spacing: -1px;
-  font-style: italic; }
+  font-weight: 600; }
   blockquote > :last-child {
     margin-bottom: 0; }
 
