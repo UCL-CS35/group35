@@ -7,6 +7,18 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
+/** 
+ * Custom Styling 
+*/
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 0;
+  border-top: 1px solid #dce0e0; }
+
+thead {
+  background: #ddd; }
+
 /**
  * Basic styling
  */

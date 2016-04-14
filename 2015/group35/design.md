@@ -25,8 +25,12 @@ We created a flowchart to describe the steps and orders involved for INcDb based
 
 ![Flowchart's Sketch](../images/sketches/flowchart.jpg)
 
+<hr>
+
 # Stage 2: Wireframe
 After a group discussion on our sketches, we decided to implement these ideas to create a simple flow chart of the website. We wanted to develop a better understanding to how we, as users of the website, would get around. That’s why we constructed a simple wireframe using the sketches to build a simple user interface using flowchart software (draw.io), and outline of the website. The astehetic design of the wireframe is kept to the minimal as the focus is on the flow and layout of the application. The full wireframe can be found at <https://drive.google.com/file/d/0B_L13V4oU0QTOUZKaHlGalpCdk0/view?usp=sharing?>
+
+<hr>
 
 # Stage 3: Photoshop Mockups
 Once we finalised the wireframe and got our approval from Dr.Skippper, we transfer these ideas that were developed by pencil and paper to the screen. We browsed through existing websites to identify colour schemes and fonts for inspiration for the design of the website.
@@ -56,6 +60,8 @@ The second screenshot presents the general interface when manipulating with the 
 Another thing we took into consideration is the ‘Mapping’ principle to indicate the user the relevant page they are in with accordance to the type of brains scan they are currently looking at. For example in the screenshot above, the page is presenting the brain scan for the Term ‘ability’. Since this is a Term, the 'Term' option is highlighted in the navigation bar above.
 
 The information below the brain scan presents two main categories that the user can browse through. Either ‘Movies’ or ‘Components’. The Movies pane presents a list of other Movies that are highly associated with the selected Term, and ‘Components’ (for Neuroscientists) presents each individual Components that has the highest probaility of association with the selected Term.
+
+<hr>
 
 # Stage 4 : HTML/CSS Prototyping
 With our finalised Photoshop Mockups, we started developing a HTML/CSS design prototype. The aim of the prototype was to experiement with the UI components of the Bootstrap framework. By building a clickable prototype, the group and stakeholders will have a clear idea on the feel and look of the project. The source code of INcDb Mockup is at <https://github.com/UCL-CS35/incdb-mockup>
