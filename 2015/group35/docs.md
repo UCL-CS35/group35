@@ -13,6 +13,15 @@ TODO
 9. Testing and evaluation of the product solution
 10. System manual
 
+# Architectural Diagrams
+Deployment Diagram
+<object data="../images/diagrams/deployment.svg" width="100%" type="image/svg+xml">
+</object>
+
+Half Finished Class Diagram
+<img src="../images/diagrams/class.svg" style="width:100%">
+
+
 # User Guide v0.1
 
 * Repository Browsing
