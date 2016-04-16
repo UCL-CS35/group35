@@ -10,11 +10,12 @@ TODO
 6. Technical achievements, implementation details, use of design patterns
 
 ## Architectural Diagrams
-Deployment Diagram
+
+### Deployment Diagram
 <object data="../images/diagrams/deployment.svg" width="100%" type="image/svg+xml">
 </object>
 
-Half Finished Class Diagram
+### Half Finished Class Diagram
 <img src="../images/diagrams/class.svg" style="width:100%">
 
 <hr>
