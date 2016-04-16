@@ -8,8 +8,6 @@ TODO
 
 4. Development plan, iterations and forks in prototypes
 6. Technical achievements, implementation details, use of design patterns
-8. Referenced materials cited and examples/trials made
-9. Testing and evaluation of the product solution
 
 ## Architectural Diagrams
 Deployment Diagram
@@ -18,6 +16,56 @@ Deployment Diagram
 
 Half Finished Class Diagram
 <img src="../images/diagrams/class.svg" style="width:100%">
+
+<hr>
+
+## Referenced Materials
+
+Referenced materials cited and examples/trials made
+
+1. neurosynth-web - <https://github.com/neurosynth/neurosynth-web>
+
+2. Neurosynth Viewer - <https://github.com/neurosynth/nsviewer>
+
+3. Flask-User starter app - <https://github.com/lingthio/Flask-User-starter-app>
+
+4. Helper to list routes (like Rails' rake routes) - <http://flask.pocoo.org/snippets/117/>
+
+5. How to paginate in Flask-SQLAlchemy for db.session joined queries? - <http://stackoverflow.com/questions/15727155/how-to-paginate-in-flask-sqlalchemy-for-db-session-joined-queries>
+
+6. Error Handlers - <http://flask.pocoo.org/docs/0.10/patterns/errorpages/#error-handlers>
+
+7. Flask AJAX Autocomplete - <http://stackoverflow.com/questions/15310644/flask-ajax-autocomplete>
+
+8. flask-multi-upload - <https://github.com/kirsle/flask-multi-upload>
+
+9. How to unzip file in Python on all OSes? - <http://stackoverflow.com/questions/12886768/how-to-unzip-file-in-python-on-all-oses>
+
+10. !!! Celery
+
+11. !!! NSViewer
+
+### Trials Made
+
+<hr>
+
+## Testing and Evaluation
+
+### Unit Tesing using pytest
+
+We tested INcDb on 2 different kind of test cases. 
+
+1. The first kind is using the client which act like the browser, to navigate INcDb. We check that given each URL, the expected layout is return by confirming the content of the layout contain the keywords (usually the title of the page) we specified.
+
+2. We also tested the Python functions like `find_or_create_user` to verify that data is added correctly into the database.
+
+The set of test cases can be found at <https://github.com/UCL-CS35/incdb-poc/tree/master/tests>
+
+### Issues Faced
+
+As we try to keep each set of test cases independent, we intialise the database for every set of test cases. However, the initialisation of Neurosynth dataset take up a considerable amount of time (at least 5 minutes). Thus, we did not implement detailed and complicated test cases.
+
+<hr>
 
 ## System Manual
 
