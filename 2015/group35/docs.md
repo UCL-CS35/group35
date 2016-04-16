@@ -14,8 +14,8 @@ Deployment Diagram
 <object data="../images/diagrams/deployment.svg" width="100%" type="image/svg+xml">
 </object>
 
-Half Finished Class Diagram
-<img src="../images/diagrams/class.svg" style="width:100%">
+Database Schema
+<img src="../images/diagrams/schema.svg" style="width:100%">
 
 <hr>
 
