@@ -7,10 +7,17 @@ permalink: /docs/
 TODO 
 
 4. Development plan, iterations and forks in prototypes
-5. Architectural diagrams
 6. Technical achievements, implementation details, use of design patterns
 8. Referenced materials cited and examples/trials made
 9. Testing and evaluation of the product solution
+
+## Architectural Diagrams
+Deployment Diagram
+<object data="../images/diagrams/deployment.svg" width="100%" type="image/svg+xml">
+</object>
+
+Half Finished Class Diagram
+<img src="../images/diagrams/class.svg" style="width:100%">
 
 ## System Manual
 
