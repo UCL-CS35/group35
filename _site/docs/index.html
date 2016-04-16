@@ -114,8 +114,6 @@ img {
 <ol>
   <li>Development plan, iterations and forks in prototypes</li>
   <li>Technical achievements, implementation details, use of design patterns</li>
-  <li>Referenced materials cited and examples/trials made</li>
-  <li>Testing and evaluation of the product solution</li>
 </ol>
 
 <h2 id="architectural-diagrams">Architectural Diagrams</h2>
@@ -125,6 +123,75 @@ img {
 
 <p>Half Finished Class Diagram
 <img src="../images/diagrams/class.svg" style="width:100%" /></p>
+
+<hr />
+
+<h2 id="referenced-materials">Referenced Materials</h2>
+
+<p>Referenced materials cited and examples/trials made</p>
+
+<ol>
+  <li>
+    <p>neurosynth-web - <a href="https://github.com/neurosynth/neurosynth-web">https://github.com/neurosynth/neurosynth-web</a></p>
+  </li>
+  <li>
+    <p>Neurosynth Viewer - <a href="https://github.com/neurosynth/nsviewer">https://github.com/neurosynth/nsviewer</a></p>
+  </li>
+  <li>
+    <p>Flask-User starter app - <a href="https://github.com/lingthio/Flask-User-starter-app">https://github.com/lingthio/Flask-User-starter-app</a></p>
+  </li>
+  <li>
+    <p>Helper to list routes (like Rails’ rake routes) - <a href="http://flask.pocoo.org/snippets/117/">http://flask.pocoo.org/snippets/117/</a></p>
+  </li>
+  <li>
+    <p>How to paginate in Flask-SQLAlchemy for db.session joined queries? - <a href="http://stackoverflow.com/questions/15727155/how-to-paginate-in-flask-sqlalchemy-for-db-session-joined-queries">http://stackoverflow.com/questions/15727155/how-to-paginate-in-flask-sqlalchemy-for-db-session-joined-queries</a></p>
+  </li>
+  <li>
+    <p>Error Handlers - <a href="http://flask.pocoo.org/docs/0.10/patterns/errorpages/#error-handlers">http://flask.pocoo.org/docs/0.10/patterns/errorpages/#error-handlers</a></p>
+  </li>
+  <li>
+    <p>Flask AJAX Autocomplete - <a href="http://stackoverflow.com/questions/15310644/flask-ajax-autocomplete">http://stackoverflow.com/questions/15310644/flask-ajax-autocomplete</a></p>
+  </li>
+  <li>
+    <p>flask-multi-upload - <a href="https://github.com/kirsle/flask-multi-upload">https://github.com/kirsle/flask-multi-upload</a></p>
+  </li>
+  <li>
+    <p>How to unzip file in Python on all OSes? - <a href="http://stackoverflow.com/questions/12886768/how-to-unzip-file-in-python-on-all-oses">http://stackoverflow.com/questions/12886768/how-to-unzip-file-in-python-on-all-oses</a></p>
+  </li>
+  <li>
+    <p>!!! Celery</p>
+  </li>
+  <li>
+    <p>!!! NSViewer</p>
+  </li>
+</ol>
+
+<h3 id="trials-made">Trials Made</h3>
+
+<hr />
+
+<h2 id="testing-and-evaluation">Testing and Evaluation</h2>
+
+<h3 id="unit-tesing-using-pytest">Unit Tesing using pytest</h3>
+
+<p>We tested INcDb on 2 different kind of test cases.</p>
+
+<ol>
+  <li>
+    <p>The first kind is using the client which act like the browser, to navigate INcDb. We check that given each URL, the expected layout is return by confirming the content of the layout contain the keywords (usually the title of the page) we specified.</p>
+  </li>
+  <li>
+    <p>We also tested the Python functions like <code class="highlighter-rouge">find_or_create_user</code> to verify that data is added correctly into the database.</p>
+  </li>
+</ol>
+
+<p>The set of test cases can be found at <a href="https://github.com/UCL-CS35/incdb-poc/tree/master/tests">https://github.com/UCL-CS35/incdb-poc/tree/master/tests</a></p>
+
+<h3 id="issues-faced">Issues Faced</h3>
+
+<p>As we try to keep each set of test cases independent, we intialise the database for every set of test cases. However, the initialisation of Neurosynth dataset take up a considerable amount of time (at least 5 minutes). Thus, we did not implement detailed and complicated test cases.</p>
+
+<hr />
 
 <h2 id="system-manual">System Manual</h2>
 
