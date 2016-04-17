@@ -98,13 +98,23 @@ Referenced materials cited and examples/trials made
 
 9. How to unzip file in Python on all OSes? - <http://stackoverflow.com/questions/12886768/how-to-unzip-file-in-python-on-all-oses>
 
-10. Setting up Celery Task Queue- <http://docs.celeryproject.org/en/latest/index.html>
+10. Setting up Celery Task Queue - <http://docs.celeryproject.org/en/latest/index.html>
 
 11. Running Celery Worker Daemonized using Supervisor - <https://github.com/celery/celery/blob/3.1/extra/supervisord/celeryd.conf>
+
+12. Accessing DB for Celery Tasks - <http://www.prschmid.com/2013/04/using-sqlalchemy-with-celery-tasks.html>
 
 11. !!! NSViewer
 
 ### Trials Made
+
+Accessing DB with Celery
+
+- At first we thought reading and writing of the SQLite database using background tasks would be done in the same manner as non background tasks, but it failed to gain access to the existing database, returning with error messages like 'no such table'.
+
+- To try and solve that problem we looked into how Neurosynth uses Celery for their background tasks and found that they created a subclass of Celery Tasks - namely NeurosynthTask. However, the attempt did not result in the background task successfully reading and writing the database. 
+
+- Then from further researching online, we found a solution which uses a new database session for background tasks. In addition to creating a scoped session for the background task, we also had to create a new sublass of Celery Tasks - 'SqlAlchemyTask' which removes the session at the end of the task to ensure a closed connection. 
 
 <hr>
 
