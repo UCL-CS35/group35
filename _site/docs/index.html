@@ -116,6 +116,70 @@ img {
   <li>Technical achievements, implementation details, use of design patterns</li>
 </ol>
 
+<h2 id="technical-achievements">Technical Achievements</h2>
+
+<h2 id="implementation-details-todo">Implementation Details (TODO)</h2>
+
+<h2 id="design-patterns">Design Patterns</h2>
+
+<h3 id="model-view-controller-mvc">Model View Controller (MVC)</h3>
+
+<p>For INcDb, we implemented Model View Controller to separates the application logic from the user interface. The separation is done by using having the Controller to receive input and interacting with the Model and passing the data required to the View.</p>
+
+<p>The <strong>Controllers</strong> are found in the path <code class="highlighter-rouge">app/controllers</code>. Each actions in the <code class="highlighter-rouge">controllers</code> are associated with a predefined route. The controller action uses the <strong>Models</strong> found in <code class="highlighter-rouge">app/models</code> to retrieve data from a database. The data is then passed to a <strong>View</strong>, located in the <code class="highlighter-rouge">app/templates/</code>. The view will then present the data to the user in their browser.</p>
+
+<p>Example of a Controller action:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>@home_blueprint.route('guide')
+def guide():
+    return render_template('guide.html')
+</code></pre>
+</div>
+
+<p>Example of a Model:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>class DecodingSet(db.Model):
+  __tablename__ = 'decoding_set'
+
+  id = db.Column(db.Integer, primary_key=True)
+  analysis_set_id = db.Column(db.Integer,
+                            db.ForeignKey(AnalysisSet.id), nullable=True)
+  analysis_set = db.relationship(AnalysisSet,
+                               backref=db.backref('decoding_set'))
+  name = db.Column(db.String(20))
+  n_images = db.Column(db.Integer)
+  n_voxels = db.Column(db.Integer)
+  is_subsampled = db.Column(db.Boolean)
+</code></pre>
+</div>
+
+<h3 id="decorators">Decorators</h3>
+
+<p>We used Decorator design pattern to add additional functionality to each view in Flask. A decorator is a function that returns a function. As each view in Flask is a function, we used the <code class="highlighter-rouge">route()</code> and <code class="highlighter-rouge">login_required()</code> decorators to implement routing and access control for the views.</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">route()</code> decorator</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">route()</code> is a decorator by Flask that is used to register the a view function for a given URL rule. Using a decorator simplify the code as it apply the routing functionality to the view function that follows it. Although the <code class="highlighter-rouge">flask.add_url_rule()</code> work exactly the same, it requires the name of view function in its parameter. A change in the name of the view function will result in error in routing.</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">login_required()</code> decorator</p>
+</blockquote>
+
+<p>To allow only logged in user to create collection and upload Raw Dataset, we apply the <code class="highlighter-rouge">@login_required</code> decorator provided by Flask-Login to redirect user to the login in page if they are not logged in and try to access the page.</p>
+
+<p>The following code snippets show how <code class="highlighter-rouge">route</code> and <code class="highlighter-rouge">login_required</code> decorators are implemented.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>@contribute_blueprint.route('contribute/new', methods=["POST", "GET"])
+@login_required  # Limits access to authenticated users
+def new_collection():
+    """ Allow user to create new collection """
+
+    ...
+</code></pre>
+</div>
+
 <h2 id="architectural-diagrams">Architectural Diagrams</h2>
 
 <h3 id="deployment-diagram">Deployment Diagram</h3>
