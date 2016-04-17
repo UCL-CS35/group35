@@ -117,23 +117,71 @@ permalink: /project/
   </tbody>
 </table>
 
+<hr>
+
 ## Progress in Term 2
 
-! TODO similar gantt chart as term 1
+### Work Packages Completed
 
-! Management of the project including work packages completed between the team members
+<table>
+  <thead>
+  <tr>
+    <th width="33%">Johnson Cheung</th>
+    <th>Rajind Karunaratne</th>
+    <th width="33%">Yong Lin Ong</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr style="vertical-align:top;">
+    <td>
+      <li>Index page for Terms</li>
+      <li>Individual Component page</li>
+      <li>Correlation of Terms for each Component</li>
+      <li>Adminstrator's actions to Download and Upload Dataset</li>
+      <li>Background task to decode Processed Dataset</li>
+      <li>Deployment on remote server</li>
+    </td>
+    <td>
+      <li>Implement design styling</li>
+      <li>Integrate Neurosynth Viewer</li>
+      <li>Merge Components</li>
+      <li>User Guide</li>
+      <li>Delete function for Collection</li>
+      <li>Deployment on remote server</li>
+    </td>
+    <td>
+      <li>User Management</li>
+      <li>Implement Data Submission function</li>
+      <li>Intergate Neurosynth's decoding functionality</li>
+      <li>Implement MVC design pattern</li>
+      <li>Autocomplete suggestion for Search</li>
+      <li>Test Case for Empty search result</li>
+      <li>Deployment on remote server</li>
+    </td>
+  </tr>
+  </tbody>
+</table> 
+
+<hr>
 
 ## Bi-Weekly Reports
+
 The list of reports are written fortnightly to record the progress made by the group. The report include meeting minutes, problems faced, tasks completed, tasks to be done and a paragraph by each member on his personal contribution.
 
 ! TODO links for all bi-weekly reports
 
+<hr>
+
 ## Gantt Chart for Term 2
+
 We have drafted a Gantt Chart to schedule the development tasks for Term 2. The chart is subject to changes.
 
 <iframe style="margin-bottom:15px;width:100%;height:600px;border:1px solid #ddd" src="https://docs.google.com/spreadsheets/d/1HN2mcfyxIBp2VjrhvK1a0v93PscYGXTvdhvVQPNaz08/pubhtml?widget=true&amp;headers=false"></iframe>
 
+<hr>
+
 ## Project Repository
+
 We will be hosting our source codes for our project on GitHub. The table below contain information of all our source codes.
 
 <table>
@@ -172,6 +220,8 @@ We will be hosting our source codes for our project on GitHub. The table below c
     </tr>
   </tbody>
 </table>
+
+<hr>
 
 ## Project Management Tools
 

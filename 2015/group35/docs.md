@@ -63,6 +63,8 @@ The following code snippets show how `route` and `login_required` decorators are
 
 	    ...
 
+<hr>
+
 ## Architectural Diagrams
 
 ### Deployment Diagram
