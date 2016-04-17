@@ -96,7 +96,9 @@ Referenced materials cited and examples/trials made
 
 9. How to unzip file in Python on all OSes? - <http://stackoverflow.com/questions/12886768/how-to-unzip-file-in-python-on-all-oses>
 
-10. !!! Celery
+10. Setting up Celery Task Queue- <http://docs.celeryproject.org/en/latest/index.html>
+
+11. Running Celery Worker Daemonized using Supervisor - <https://github.com/celery/celery/blob/3.1/extra/supervisord/celeryd.conf>
 
 11. !!! NSViewer
 
