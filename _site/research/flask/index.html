@@ -1,0 +1,72 @@
+<p>Our client requested the group to build a website similar to the one found on Neurosynth which uses the web framework, Python Flask. Our group decided to select Flask as our framework as we try to emulate a repository similar to Neurosynth. By using Flask, which is written in Python, it allows the group to learn more about Python, which is also the language for most of the tools that are used to process the collected brain images.</p>
+
+<p>Flask is a Python micro web framework based on Werkzeug and Jinja2 (<a href="http://flask.pocoo.org/">http://flask.pocoo.org/</a>), that has a file structure (<a href="http://damyanon.net/flask-series-structure/">http://damyanon.net/flask-series-structure/</a>) that contains a folder named bin – contains scripts that will be executed on the command line, a folder named docs – contains project related documentation files, a folder named tests – contains unit tests, a folder named <code class="highlighter-rouge">[app-name]</code> – contains the application itself, and a file named <code class="highlighter-rouge">run.py</code> – used to run the Flask application.</p>
+
+<p>Inside the application folder, there will be different modules as the application is configured to be modular, based on the blueprint concept in Flask. Inside each module folder, there will be a <code class="highlighter-rouge">_init_.py</code> file which initialize the folder as Python package. These modules will be register by using the method <code class="highlighter-rouge">app.register_blueprint([module-name], url_prefix='/')</code> in the application object, <code class="highlighter-rouge">[app-name]/_init_.py</code>.</p>
+
+<h2 id="flask-extensions">Flask Extensions</h2>
+
+<p>In order to speed up our development process, we will be using a few Flask Extensions, which are Python packages that add new function to the Flask app.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td>SQLAlchemy (via Flask-SQLAlchemy)</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td>An SQL toolkit for database access and is well-known for its object relational mapper.</td>
+    </tr>
+    <tr>
+      <td><strong>Strength</strong></td>
+      <td>Enterprise-level persistence patterns, efficient and high-performing database access.</td>
+    </tr>
+    <tr>
+      <td><strong>Weakness</strong></td>
+      <td>Integrating with legacy systems is challenging.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td>Flask-User</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td>An user account management for Flask that include register, confirmation email, login and others.</td>
+    </tr>
+    <tr>
+      <td><strong>Strength</strong></td>
+      <td>Reliable, well-documented and ready to use.</td>
+    </tr>
+    <tr>
+      <td><strong>Weakness</strong></td>
+      <td>The extension is still in Beta release.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Flask-Migrate</strong></td>
+      <td>SQLAlchemy database migrations for Flask applications using Alembic</td>
+    </tr>
+    <tr>
+      <td><strong>Flask-WTF</strong></td>
+      <td>Simple integration of Flask and WTForms, including CSRF, file upload and Recaptcha integration</td>
+    </tr>
+    <tr>
+      <td><strong>Flask-Uploads</strong></td>
+      <td>A Flask extension to help you add file uploading functionality to your site.</td>
+    </tr>
+    <tr>
+      <td><strong>Flask-Mail</strong></td>
+      <td>Flask-Mail adds SMTP mail sending to your Flask applications</td>
+    </tr>
+  </tbody>
+</table>

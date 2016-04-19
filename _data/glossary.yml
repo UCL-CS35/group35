@@ -1,0 +1,9 @@
+term: "The keyword that describe the brain activation."
+
+component: "An analysed brain image that contain the x-y-z axis of a dataset."
+
+repository: "The web application that will be publically available."
+
+processed_dataset: "The set of files that are produced after our client has run the analysis process on the Raw Dataset."
+
+raw_dataset: "The set of brain images collected by researcher when someone watch a movie."

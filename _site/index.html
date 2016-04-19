@@ -1,211 +1,99 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Internet Neurocinematics Database</title>
-  <meta name="description" content="The objective of this project is to build a social data repository for the Internet Neurocinematics Database (INcDb), which is a database of functional magnetic resource imaging (fMRI) data collected while people watch full length movies.
-">
-
-  <link rel="stylesheet" href="/2015/group35/css/main.css">
-  <link rel="canonical" href="http://students.cs.ucl.ac.uk/2015/group35/2015/group35/">
-  <link rel="alternate" type="application/rss+xml" title="Internet Neurocinematics Database" href="http://students.cs.ucl.ac.uk/2015/group35/2015/group35/feed.xml">
-</head>
-
-
-  <body>
-
-    <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="/2015/group35/">Group 35</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        
-          
-          <a class="page-link" href="/2015/group35/background/">Background</a>
-          
-        
-          
-          <a class="page-link" href="/2015/group35/design/">Design</a>
-          
-        
-          
-          <a class="page-link" href="/2015/group35/docs/">Docs</a>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-          <a class="page-link" href="/2015/group35/project/">Project</a>
-          
-        
-          
-          <a class="page-link" href="/2015/group35/requirements/">Requirements</a>
-          
-        
-          
-          <a class="page-link" href="/2015/group35/research/">Research</a>
-          
-        
-          
-          <a class="page-link" href="/2015/group35/support/">Support</a>
-          
-        
+<div class="row">
+  <div class="col-lg-12">
+      <h2 class="page-header">Features</h2>
+  </div>
+  <div class="col-xs-4">
+    <div class="panel panel-default text-center">
+      <div class="panel-heading">
+        <span class="fa-stack fa-5x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+        </span>
       </div>
-    </nav>
-
-  </div>
-
-</header>
-
-
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="home">
-
-
-<style>
-.row{
-  text-align:center;
-  margin: 20px 0 10px;
-}
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.four.columns {
-    width: 30.6666666667%;
-}
-.columns:first-child {
-    margin-left: 0;
-}
-.columns {
-    margin-left: 4%;
-}
-.columns{
-    float: left;
-    box-sizing: border-box;
-}
-.columns h4 {
-  font-size: 26px;
-  margin-bottom: 5px;
-}
-.columns p {
-  font-weight: 300;
-}
-.home p {
-  font-size: 18px;
-}
-</style>
-
-<div style="padding: 40px 0">
-  <h1 style="text-align:center;font-weight:800;margin-bottom:15px;">Internet Neurocinematics Database</h1>
-
-  <div class="row">
-    <div class="four columns">
-      <img src="../images/browser.png" width="150px">
-      <h4>Discover</h4>
-      <p>Discover how our brain reacts while watching movies</p>
-    </div>
-    <div class="four columns">
-      <img src="../images/fork.png" width="99px">
-      <h4>Contribute</h4>
-      <p>Allow scientists to contribute their data and make discovery of the study</p>
-    </div>
-    <div class="four columns">
-      <img src="../images/os-box.png" width="150px">
-      <h4>Educate</h4>
-      <p>Use as education tools for human neuroscience</p>
-    </div>
-  </div>
-</div>
-
-<div style="padding: 40px 50px;text-align:center;">
-  <h2 style="text-align:center;margin-bottom:25px;font-size:28px;">Project Overview</h2>
-
-  <p><strong>TODO: Video of the final proof of concept application/system (this should show how it is set up and used, demonstrating its functionality</strong></p>
-
-  <iframe style="border:1px solid #ddd; padding:8px;margin:10px;" width="560" height="315" src="https://www.youtube.com/embed/KOsu35xp_eA" frameborder="0" allowfullscreen></iframe>
-
-  <p>The objective of this project is to build a social data repository for the Internet Neurocinematics Database (INcDb), which is a database of functional magnetic resource imaging (fMRI) data collected while people watch full length movies.</p>
-  <p>INcDb will allow users to browse and interact with the data. Scientists will also be able to contribute their film watching fMRI data to the repository.</p>
-
-  <p style="color:#333; font-size:14px;">The group will be developing the data repository using the open-source code associated with <a href="http://www.neurosynth.org">Neurosynth</a> (<a href="https://github.com/neurosynth/">Neurosynth's GitHub</a>).</p>
-</div>
-
-<div style="padding: 40px 50px;text-align:center;">
-
-  <h2 style="text-align:center;margin-bottom:25px;font-size:28px;">The Team</h2>
-
-  <p>This project is being completed as part of the COMP204P and COMP205P Systems Engineering modules by three 2nd year students from the UCL undergraduate Computer Science course.</p>
-
-  <div class="row" style="margin-top:50px;">
-    <div class="four columns">
-      <img src="http://students.cs.ucl.ac.uk/2015/group35/images/johnson.png" style="width:8vw;height:8vw;margin-bottom:10px;">
-      <h4>Johnson Cheung</h4>
-      <p>Team Leader, Client Liasion</p>
-    </div>
-    <div class="four columns">
-      <img src="http://students.cs.ucl.ac.uk/2015/group35/images/rajind.png" style="width:8vw;height:8vw;margin-bottom:10px;">
-      <h4>Rajind Karunaratne</h4>
-      <p>Deputy Team Leader, <br> UI/UX Lead</p>
-    </div>
-    <div class="four columns">
-      <img src="http://students.cs.ucl.ac.uk/2015/group35/images/donovan.png" style="width:8vw;height:8vw;margin-bottom:10px;">
-      <h4>Yong Lin Ong</h4>
-      <p>Tech Lead, Editor</p>
-    </div>
-  </div>
-</div>
-
-</div>
-
+      <div class="panel-body">
+        <h4>Discover</h4>
+        <p>Discover how our brain reacts while watching movies.</p>
       </div>
-
-
-      
     </div>
-
-    <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-
-      <div class="footer-col">
-        <ul class="contact-list">
-          
-          <li>Internet Neurocinematics Database. Systems Engineering Project Group 35.</li>
-          <li>© 2015-2016 Johnson Cheung, Yong Lin Ong, Rajind Karunaratne.</li>
-        </ul>
-      </div>
-
-    </div>
-
   </div>
+  <div class="col-xs-4">
+    <div class="panel panel-default text-center">
+      <div class="panel-heading">
+        <span class="fa-stack fa-5x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="fa fa-upload fa-stack-1x fa-inverse"></i>
+        </span>
+      </div>
+      <div class="panel-body">
+        <h4>Contribute</h4>
+        <p>Allow scientists to contribute their data and make discovery of the study</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="panel panel-default text-center">
+      <div class="panel-heading">
+        <span class="fa-stack fa-5x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="fa fa-university fa-stack-1x fa-inverse"></i>
+        </span>
+      </div>
+      <div class="panel-body">
+        <h4>Educate</h4>
+        <p>Use as education tools for human neuroscience.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-</footer>
+<h2 id="overview">Overview</h2>
 
+<p>The objective of this project is to build a social data repository for the Internet Neurocinematics Database (INcDb), which is a database of functional magnetic resource imaging (fMRI) data collected while people watch full length movies.</p>
 
-  </body>
+<p>INcDb will allow users to browse and interact with the data. Scientists will also be able to contribute their film watching fMRI data to the repository.</p>
 
-</html>
+<p>The group will be developing the data repository using the open-source code associated with Neurosynth (Neurosynth’s GitHub).</p>
+
+<h2 id="project-video">Project Video</h2>
+
+<iframe style="border:1px solid #ddd;" width="560" height="315" src="https://www.youtube.com/embed/KOsu35xp_eA" frameborder="0" allowfullscreen=""></iframe>
+
+<h2 id="the-team">The Team</h2>
+
+<p>This project is being completed as part of the COMP204P and COMP205P Systems Engineering modules by three 2nd year students from the UCL undergraduate Computer Science course.</p>
+
+<div class="row">
+  <div class="col-xs-4">
+    <div class="panel panel-default text-center">
+      <div class="panel-heading">
+        <img title="Johnson Cheung" src="/2015/group35/images/johnson.png" style="width:8vw;height:8vw" />
+      </div>
+      <div class="panel-body">
+        <h4>Johnson Cheung</h4>
+        <p>Team Leader, Client Liasion</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="panel panel-default text-center">
+      <div class="panel-heading">
+        <img title="Rajind Karunaratne" src="/2015/group35/images/rajind.png" style="width:8vw;height:8vw" />
+      </div>
+      <div class="panel-body">
+        <h4>Rajind Karunaratne</h4>
+        <p>Deputy Team Leader, UI/UX Lead</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="panel panel-default text-center">
+      <div class="panel-heading">
+        <img title="Yong Lin Ong" src="/2015/group35/images/donovan.png" style="width:8vw;height:8vw" />
+      </div>
+      <div class="panel-body">
+        <h4>Yong Lin Ong</h4>
+        <p>Tech Lead, Editor</p>
+      </div>
+    </div>
+  </div>
+</div>

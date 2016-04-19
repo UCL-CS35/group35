@@ -1,0 +1,15 @@
+<h2 id="accessing-database-with-celery">Accessing Database with Celery</h2>
+
+<ul>
+  <li>
+    <p>At first we thought reading and writing of the SQLite database using background tasks would be done in the same manner as non background tasks, but it failed to gain access to the existing database, returning with error messages like ‘no such table’.</p>
+  </li>
+  <li>
+    <p>To try and solve that problem we looked into how Neurosynth uses Celery for their background tasks and found that they created a subclass of Celery Tasks - namely NeurosynthTask. However, the attempt did not result in the background task successfully reading and writing the database.</p>
+  </li>
+  <li>
+    <p>Then from further researching online, we found a solution which uses a new database session for background tasks. In addition to creating a scoped session for the background task, we also had to create a new sublass of Celery Tasks - ‘SqlAlchemyTask’ which removes the session at the end of the task to ensure a closed connection.</p>
+  </li>
+</ul>
+
+<h2 id="implementing-neurosynth-viewer">Implementing Neurosynth Viewer</h2>

@@ -1,0 +1,253 @@
+
+
+
+
+ 
+:
+  title: "Project Home"
+  url: /2015/group35/
+  link: <a href="/2015/group35/">Project Home</a>
+
+
+ 
+background:
+  title: "Background"
+  url: /2015/group35/background/
+  link: <a href="/2015/group35/background/">Background</a>
+
+
+ 
+requirements:
+  title: "Requriements"
+  url: /2015/group35/requirements/
+  link: <a href="/2015/group35/requirements/">Requriements</a>
+
+
+ 
+use-cases:
+  title: "Use Cases"
+  url: /2015/group35/use-cases/
+  link: <a href="/2015/group35/use-cases/">Use Cases</a>
+
+
+ 
+glossary:
+  title: "Glossary"
+  url: /2015/group35/glossary/
+  link: <a href="/2015/group35/glossary/">Glossary</a>
+
+
+
+
+ 
+projectprogress:
+  title: "Progress"
+  url: /2015/group35/project/progress/
+  link: <a href="/2015/group35/project/progress/">Progress</a>
+
+
+ 
+projectbiweekly:
+  title: "Bi-Weekly Reports"
+  url: /2015/group35/project/biweekly/
+  link: <a href="/2015/group35/project/biweekly/">Bi-Weekly Reports</a>
+
+
+ 
+projectrepositories:
+  title: "Repositories"
+  url: /2015/group35/project/repositories/
+  link: <a href="/2015/group35/project/repositories/">Repositories</a>
+
+
+ 
+projecttools:
+  title: "Tools"
+  url: /2015/group35/project/tools/
+  link: <a href="/2015/group35/project/tools/">Tools</a>
+
+
+
+
+ 
+researchneurosynth-neurovault:
+  title: "Neurosynth & Neurovault"
+  url: /2015/group35/research/neurosynth-neurovault/
+  link: <a href="/2015/group35/research/neurosynth-neurovault/">Neurosynth & Neurovault</a>
+
+
+ 
+researchversion-control:
+  title: "Version Control - Git & GitHub"
+  url: /2015/group35/research/version-control/
+  link: <a href="/2015/group35/research/version-control/">Version Control - Git & GitHub</a>
+
+
+ 
+researchflask:
+  title: "Flask"
+  url: /2015/group35/research/flask/
+  link: <a href="/2015/group35/research/flask/">Flask</a>
+
+
+ 
+researchbootstrap:
+  title: "Frontend - Bootsrap"
+  url: /2015/group35/research/bootstrap/
+  link: <a href="/2015/group35/research/bootstrap/">Frontend - Bootsrap</a>
+
+
+ 
+researchdeployment:
+  title: "Deployment"
+  url: /2015/group35/research/deployment/
+  link: <a href="/2015/group35/research/deployment/">Deployment</a>
+
+
+
+
+ 
+designsketches:
+  title: "Stage 1 - Sketches"
+  url: /2015/group35/design/sketches/
+  link: <a href="/2015/group35/design/sketches/">Stage 1 - Sketches</a>
+
+
+ 
+designwireframe:
+  title: "Stage 2 - Wireframe"
+  url: /2015/group35/design/wireframe/
+  link: <a href="/2015/group35/design/wireframe/">Stage 2 - Wireframe</a>
+
+
+ 
+designmockups:
+  title: "Stage 3 - Photoshop Mockups"
+  url: /2015/group35/design/mockups/
+  link: <a href="/2015/group35/design/mockups/">Stage 3 - Photoshop Mockups</a>
+
+
+ 
+designprototype:
+  title: "Stage 4 - Prototyping"
+  url: /2015/group35/design/prototype/
+  link: <a href="/2015/group35/design/prototype/">Stage 4 - Prototyping</a>
+
+
+
+
+ 
+developmentplan:
+  title: "Development Plan"
+  url: /2015/group35/development/plan/
+  link: <a href="/2015/group35/development/plan/">Development Plan</a>
+
+
+ 
+developmenttechnical-acheivements:
+  title: "Technical Achievements"
+  url: /2015/group35/development/technical-acheivements/
+  link: <a href="/2015/group35/development/technical-acheivements/">Technical Achievements</a>
+
+
+ 
+developmentdesign-patterns:
+  title: "Design Patterns"
+  url: /2015/group35/development/design-patterns/
+  link: <a href="/2015/group35/development/design-patterns/">Design Patterns</a>
+
+
+ 
+developmentarchitectural-diagrams:
+  title: "Architectural Diagrams"
+  url: /2015/group35/development/architectural-diagrams/
+  link: <a href="/2015/group35/development/architectural-diagrams/">Architectural Diagrams</a>
+
+
+ 
+developmenttrials:
+  title: "Trials"
+  url: /2015/group35/development/trials/
+  link: <a href="/2015/group35/development/trials/">Trials</a>
+
+
+ 
+developmentreferences:
+  title: "References"
+  url: /2015/group35/development/references/
+  link: <a href="/2015/group35/development/references/">References</a>
+
+
+
+
+ 
+testing:
+  title: "Testing"
+  url: /2015/group35/testing/
+  link: <a href="/2015/group35/testing/">Testing</a>
+
+
+
+
+ 
+manualssystem:
+  title: "System Manual"
+  url: /2015/group35/manuals/system/
+  link: <a href="/2015/group35/manuals/system/">System Manual</a>
+
+
+ 
+manualsuser:
+  title: "User Guide"
+  url: /2015/group35/manuals/user/
+  link: <a href="/2015/group35/manuals/user/">User Guide</a>
+
+
+
+
+ 
+support:
+  title: "Support"
+  url: /2015/group35/support/
+  link: <a href="/2015/group35/support/">Support</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

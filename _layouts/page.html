@@ -2,50 +2,44 @@
 layout: default
 ---
 
-<style>
-table{
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #ddd;
-    margin: 16px 0;
-    width: 100%;
-}
+<div class="post-header">
+   <h1 class="post-title-main">{% if page.homepage == true %} {{site.homepage_title}} {% else %}{{ page.title }}{% endif %}</h1>
+</div>
 
-th{
-    text-align: left;
-}
+<div class="post-content">
 
-td, th{
-    border:1px solid #ddd;
-    padding: 8px;
-    font-size: 14px;
-}
-img {
-    border:1px solid #ddd;
-}
-</style>
+   {% if page.summary %}
+    <div class="summary">{{page.summary}}</div>
+   {% endif %}
 
-<article class="post">
+    {% unless page.toc == false %}
+    {% include toc.html %}
+    {% endunless %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+    {% unless jekyll.environment == "production" %}
 
-  <div class="post-content">
-    {{ content }}
-    {% if page.comments %}
-      <div id="comments" >
-          <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=236799410007652";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-          <div class="fb-comments" data-href="http://students.cs.ucl.ac.uk/2015/group35/support/" data-numposts="4" width="100%" ></div>
-      </div>
-      {% endif %}
-  </div>
+    {% endunless %}
 
-</article>
+  {{content}}
+
+<div class="tags">
+    {% if page.tags != null %}
+    <b>Tags: </b>
+    {% assign projectTags = site.data.tags.allowed-tags %}
+    {% for tag in page.tags %}
+    {% if projectTags contains tag %}
+    <a href="{{ "/tag_" | prepend: site.baseurl | append: tag }}" class="btn btn-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+</div>
+
+    {% if site.disqus %}
+{% include disqus.html %}
+    {% endif %}
+
+</div>
+
+{{site.data.alerts.hr_shaded}}
+
+{% include footer.html %}

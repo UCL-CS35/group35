@@ -1,0 +1,156 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Group 35 - INcDb 
+  folders:
+
+  - title: Overview
+    output: web, pdf
+    folderitems:
+
+    - title: Project Home
+      url: /
+      type: homepage
+      output: web, pdf
+
+    - title: Background
+      url: /background/
+      output: web, pdf
+
+    - title: Requriements
+      url: /requirements/
+      output: web, pdf
+
+    - title: Use Cases
+      url: /use-cases/
+      output: web, pdf
+
+    - title: Glossary
+      url: /glossary/
+      output: web, pdf
+
+  - title: Project Management
+    output: web, pdf
+    folderitems:
+
+    - title: Progress
+      url: /project/progress/
+      output: web, pdf
+
+    - title: Bi-Weekly Reports
+      url: /project/biweekly/
+      output: web, pdf
+
+    - title: Repositories
+      url: /project/repositories/
+      output: web, pdf
+
+    - title: Tools
+      url: /project/tools/
+      output: web, pdf
+
+
+  - title: Research
+    output: web, pdf
+    folderitems:
+
+    - title: Neurosynth & Neurovault
+      url: /research/neurosynth-neurovault/
+      output: web, pdf
+
+    - title: Version Control - Git & GitHub
+      url: /research/version-control/
+      output: web, pdf
+
+    - title: Flask
+      url: /research/flask/
+      output: web, pdf
+
+    - title: Frontend - Bootsrap
+      url: /research/bootstrap/
+      output: web, pdf
+
+    - title: Deployment
+      url: /research/deployment/
+      output: web, pdf
+
+  - title: Design
+    output: web, pdf
+    
+    folderitems:
+    - title: Stage 1 - Sketches
+      url: /design/sketches/
+      output: web, pdf
+
+    - title: Stage 2 - Wireframe
+      url: /design/wireframe/
+      output: web, pdf
+
+    - title: Stage 3 - Photoshop Mockups
+      url: /design/mockups/
+      output: web, pdf
+
+    - title: Stage 4 - Prototyping
+      url: /design/prototype/
+      output: web, pdf
+
+  - title: Development
+    output: web, pdf
+    
+    folderitems:
+    - title: Development Plan
+      url: /development/plan/
+      output: web, pdf
+
+    - title: Technical Achievements
+      url: /development/technical-acheivements/
+      output: web, pdf
+
+    - title: Design Patterns
+      url: /development/design-patterns/
+      output: web, pdf
+
+    - title: Architectural Diagrams
+      url: /development/architectural-diagrams/
+      output: web, pdf
+
+    - title: Trials
+      url: /development/trials/
+      output: web, pdf
+
+    - title: References 
+      url: /development/references/
+      output: web, pdf
+
+  - title: Testing
+    output: web, pdf
+    
+    folderitems:
+    - title: Testing
+      url: /testing/
+      output: web, pdf
+
+  - title: Manuals
+    output: web, pdf
+    
+    folderitems:
+
+    - title: System Manual
+      url: /manuals/system/
+      output: web, pdf
+
+    - title: User Guide
+      url: /manuals/user/
+      output: web, pdf
+
+  - title: Support
+    output: web, pdf
+    
+    folderitems:
+
+    - title: Support
+      url: /support/
+      output: web, pdf
+
+  

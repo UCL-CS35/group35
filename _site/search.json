@@ -1,0 +1,336 @@
+[
+
+
+
+
+{
+"title": "Architectural Diagrams",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/development/architectural-diagrams/",
+"summary": ""
+},
+
+
+
+{
+"title": "Background",
+"tags": "",
+"keywords": "background",
+"url": "/2015/group35/background/",
+"summary": ""
+},
+
+
+
+{
+"title": "Bi-Weekly Reports",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/project/biweekly/",
+"summary": ""
+},
+
+
+
+{
+"title": "Frontend - Bootstrap",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/research/bootstrap/",
+"summary": ""
+},
+
+
+
+{
+"title": "Deployment",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/research/deployment/",
+"summary": ""
+},
+
+
+
+{
+"title": "Design Patterns",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/development/design-patterns/",
+"summary": ""
+},
+
+
+
+{
+"title": "Development Plan",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/development/plan/",
+"summary": ""
+},
+
+
+
+
+
+{
+"title": "Flask",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/research/flask/",
+"summary": ""
+},
+
+
+
+{
+"title": "Glossary",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/glossary/",
+"summary": "Define vocublary for the project so that the group and the client uses the same definition during the discussion of the project"
+},
+
+
+
+{
+"title": "Internet Neurocinematics Database",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/",
+"summary": ""
+},
+
+
+
+{
+"title": "Stage 3 - Photoshop Mockups",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/design/mockups/",
+"summary": ""
+},
+
+
+
+{
+"title": "Neurosynth &amp; Neurovault",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/research/neurosynth-neurovault/",
+"summary": ""
+},
+
+
+
+
+
+{
+"title": "Progress",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/project/progress/",
+"summary": ""
+},
+
+
+
+{
+"title": "Stage 4 - Prototyping",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/design/prototype/",
+"summary": ""
+},
+
+
+
+{
+"title": "References",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/development/references/",
+"summary": "Key materials accessed during the development of INcDb."
+},
+
+
+
+{
+"title": "Project Repositories",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/project/repositories/",
+"summary": ""
+},
+
+
+
+{
+"title": "Requirements",
+"tags": "",
+"keywords": "requirements",
+"url": "/2015/group35/requirements/",
+"summary": "Project Requirements idenitfy for INcDb."
+},
+
+
+
+
+
+
+
+{
+"title": "Stage 1 - Sketches",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/design/sketches/",
+"summary": ""
+},
+
+
+
+{
+"title": "Support",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/support/",
+"summary": ""
+},
+
+
+
+{
+"title": "System Manual",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/manuals/system/",
+"summary": ""
+},
+
+
+
+{
+"title": "Technical Achievements",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/development/technical-acheivements/",
+"summary": ""
+},
+
+
+
+{
+"title": "Testing",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/testing/",
+"summary": ""
+},
+
+
+
+
+
+
+
+
+
+{
+"title": "Project Management Tools",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/project/tools/",
+"summary": ""
+},
+
+
+
+
+
+{
+"title": "Trials",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/development/trials/",
+"summary": ""
+},
+
+
+
+
+
+{
+"title": "Use Cases",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/use-cases/",
+"summary": "Use Cases developed for the development of INcDb."
+},
+
+
+
+{
+"title": "User Guide",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/manuals/user/",
+"summary": ""
+},
+
+
+
+{
+"title": "Version Control - Git &amp; GitHub",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/research/version-control/",
+"summary": ""
+},
+
+
+
+{
+"title": "Stage 2 - Wireframe",
+"tags": "",
+"keywords": "",
+"url": "/2015/group35/design/wireframe/",
+"summary": ""
+},
+
+
+
+
+
+{
+"title": "Sample post",
+"tags": "newsgetting_started",
+"keywords": "",
+"url": "/2015/group35/samplepost/",
+"summary": "This is some summary frontmatter for my sample post."
+}
+,
+
+
+{
+"title": "Welcome to Jekyll!",
+"tags": "news",
+"keywords": "",
+"url": "/2015/group35/myupdate/",
+"summary": ""
+}
+,
+
+
+{
+"title": "Test post from last year",
+"tags": "news",
+"keywords": "",
+"url": "/2015/group35/test-post-from-last-year/",
+"summary": ""
+}
+
+
+
+]
