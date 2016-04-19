@@ -4,20 +4,182 @@ title: Docs
 permalink: /docs/
 ---
 
-TODO 
+## Development Plan
 
-4. Development plan, iterations and forks in prototypes
-6. Technical achievements, implementation details, use of design patterns
+The development of INcDb is done based on the features specified sequentially.
+
+1. User Management 
+2. Neurosynth Dataset generation
+3. Database design
+3. Computation of correlation between Component and Terms
+4. Repository Browsing
+5. Data (Raw Dataset) Submission by User
+6. Implement Front-End Design based on Mockup agreed with Client
+7. Neurosynth Viewer to display brain images
+8. Use Celery and Redis to move Decoding function to background task
+9. Unit Tests
+
+### Iterations
+
+__Iteration #1 - User Management__
+
+The first iteration of INcDb is the prototype done for COMP204P in Term 1. The app used Flask-User to implement the user management feature. We used the Flask-User starter app as the base and modify the code to suit our the project requirements. We changed the details of the default account and added extra fields like 'Title' and 'Affiliation'. 
+
+__Iteration #2 - Neurosynth Dataset generation, Database design, Computation of correlation between Component and Terms, Repository Browsing__
+
+The second iteration include adding the Neurosynth Dataset to the application, developing the database structure, implemeting the decoding function and basic repository browsing capability. This iteration include multiple features that are interconnected. The dataset and database was necessary for the decoding function to work and the repository browsing is included in this iteration to ensure that the database structure is well designed. 
+
+Although we can use database query to check that the decoding function insert data to the database as designed, adding the repository browsing can help us improve the database design so that the query to retreive the necessary data will be kept simple.
+
+
+__Iteration #3 - Data (Raw Dataset) Submission by User__
+
+With the user management implemented in Iteration #1, we added the ability to upload data for signed in user. During this iteration, we added a new table, `Collections`, to the database and a `uploads` folder to the application to store the Raw Dataset uploaded by the user. We also implemented a progress bar to inform user of the upload process. 
+
+__Iteration #4 - Front-End Design__
+
+As the basic features of the application is mostly completed, we started to implement the front-end design based on the agreed mockup on the application during this iteration. We make changes to the original the mockup based on the feedback from our client and TA. The changes include capitalising the first letter to improve the professionalism of the site and increase the font-size of the body text to improve readability.
+
+__Iteration #4 - Neurosynth Viewer__
+
+With the design in place, we started working on adding the Neurosynth Viewer to the application. The Neurosynth Viewer is a tool to display the brain images with sliders to interact with the images. We also added the merging function during this iteration. The merging function combines all the brain images (Component) of the Movie for a specific Term and display them using the Neurosynth Viewer.
+ 
+__Iteration #5 - Moving decoding funtion to a background task___
+
+During this iteration, we move the decoding function to a backgroun task. As the decoding function compute the correlations between each Component uploaded and each Term in the database, it take a long time to complete. It is not feasible to get our Client to wait for both the uploading and the decoding. Hence, we used a background task to run the process and our Client can carry on managing the application after uploading the Processed Dataset.
+
+__Iteration #6 - Unit Tests__
+
+The final iteration of INcDb include the testing the application using basic unit test cases. For details of the testing, please refer to the Testing page.
 
 ## Technical Achievements
 
-## Implementation Details (TODO)
+### Implementation Details
+
+1. Neurosynth Dataset generation. 
+    
+    INcDb requires a Neurosynth dataset that it uses to generate Term Analyses. The generation of Neurosynth Dataset is a memory-intensive operation which is not suitable to be done on a remote server, which typically has less RAM. 
+
+    We suggest the Dataset to be generated on a local machine. Follow the instructions on <https://github.com/neurosynth/neurosynth> to build your own Dataset (`neurosynth_dataset.pkl`) and copy the Dataset to `incdb-poc/app/data/assets/`.
+
+    With the Dataset in place, we can initialise the database and add the Analyses to the database. These analyses will then be used to compute the correlation of the Components with the Terms.
+
+2. Flask Application
+		
+    The main function of the INcDb is the repository browsing. This is implemented using database query and Flask routing mechanism. Flask routing function help to pass variable name through the URL and this variable is used to select the necessary data from the database to be displayed. 
+
+    The user management was implemented using the Flask extension - Flask-User. The user management allow signed in users to create Collection and upload Raw Dataset. 
+
+    Flask-WTF, a Flask extension, was used to simplify the creation of the complicated Collection's form. 
+
+3. Computation of correlation between Component and Terms
+   
+    Another key function performed by the INcDb is to compute the correlations of the Components uploaded by our client with the Terms Analyses generated by the Neurosynth Dataset generation. As requested by our client, we referenced the computation done by the open-sourced Neurosynth-Web, <https://github.com/neurosynth/neurosynth-web/blob/master/nsweb/tasks/__init__.py>, and implemented a similar decoding function for INcDb.
+
+    The decoding is done when new Processed Dataset is uploaded to the server by our client and the top 10 Terms (with the highest correlations) for each Component are stored in a text files on the remote server. These text files are retrieved to display the correlation values when user view the Component.
+
+    For each Component of the Processed Dataset, a row in the Decodings table (in the database) is also created and tagged with the Term that it has the higest correlation with.
+
+4. Neurosynth Viewer
+   
+    (Explain setup, selection of Components, merging)
+
+5. Background task using Celery and Redis
+
+    (Explain how is it move to backgound, starting celery workers, running redis server)
+
+### Dependencies
+
+The application is developed with a list of dependecies. The complete list of Python packages dependencies can be found at <https://github.com/UCL-CS35/incdb-poc/blob/master/requirements.txt>.
+
+We will like to highlight a few key dependencies that were critical for the development of INcDb.
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Role</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td width="15%">Flask</td>
+			<td>The micro-framework that INcDb runs on.</td>
+		</tr>
+		<tr>
+			<td>Flask-User</td>
+			<td>Flask extension used to implement User Management feature.</td>
+		</tr>
+		<tr>
+			<td>Flask-WTF</td>
+			<td>Flask extension used to simply form creation.</td>
+		</tr>
+		<tr>
+			<td>Neurosynth</td>
+			<td>Neurosynth is used to generate analyses that is used for the decoding of the Processed Dataset uploaded by our client.</td>
+		</tr>
+		<tr>
+			<td>gunicorn</td>
+			<td>A Python WSGI HTTP Server to serve the Flask application.</td>
+		</tr>
+		<tr>
+			<td>celery</td>
+			<td>A task processing system used to manage background tasks like decoding.</td>
+		</tr>
+		<tr>
+			<td>Redis</td>
+			<td>Redis is used as message broker to pass messages between Flask application and Celery workers.</td>
+		</tr>
+	</tbody>
+</table>
+
+### Code Structure
+
+The application first-level code structure is presented below and the role of each file or folder is explained.
+
+* incdb-poc/
+    * app/
+        * Contains Models, Views (templates), Controllers, Static files (CSS, JS, Images, Fonts), Setup scripts
+    * data/
+        * Contains Neurosynth Dataset, Decoding results, Admin uploaded Processed Dataset, Generated memmaps, FAQ data
+    * default/
+    * docs/
+        * Documentations generated by Sphinx
+    * migrations/
+    		* Migrations genereted (Currently empty)
+    * node_modules/
+        * Node modules required to run Neurosynth Viewer
+    * src/
+        * Coffeescript requred to run Neurosnyth Viewer
+    * tests/
+        * pytests written to test User Managemnent, Search, Creation of Collection
+    * uploads/
+        * Contains User uploaded Raw Dataset
+    * .gitignore
+        * Ignore Database and Data folders 
+    * Aptfile
+    * Cakefile
+    * Guardfile
+    * LICENSE.txt
+    * manage.py
+        * Use to start the Flask application
+    * README.md
+    * requirements.txt
+        * List of Python packages required
+    * runserver.sh
+        * Bash script to run the the Flask application in development mode
+    * runtests.sh
+        * Bash script to run the Test Cases in /tests folder
+    * supervsiord.conf
+        * Supervisor configuration file used for Deployment
+
+For the complete code, you can view them on [GitHub](https://github.com/UCL-CS35/incdb-poc). 
 
 ## Design Patterns
 
 ### Model View Controller (MVC)
 
-For INcDb, we implemented Model View Controller to separates the application logic from the user interface. The separation is done by using having the Controller to receive input and interacting with the Model and passing the data required to the View.
+For INcDb, we implemented Model View Controller to separate the application logic from the user interface. The separation is done by using the Controller to receive input and interacting with the Model and passing the required data to the View.
 
 The **Controllers** are found in the path `app/controllers`. Each actions in the `controllers` are associated with a predefined route. The controller action uses the **Models** found in `app/models` to retrieve data from a database. The data is then passed to a **View**, located in the `app/templates/`. The view will then present the data to the user in their browser.
 
