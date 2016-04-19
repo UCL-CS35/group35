@@ -3,9 +3,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
+<meta name="description" content="This manual is written for our client to access the INcDb deployed at http://188.166.170.92/.">
 <meta name="keywords" content=" ">
-<title>Design Patterns  | Project Website for UCL Systems Engineering Project - Group 35.</title>
+<title>System Manual (Demo)  | Project Website for UCL Systems Engineering Project - Group 35.</title>
 <link rel="stylesheet" href="/2015/group35/css/syntax.css">
 
 
@@ -115,7 +115,7 @@
 <script>
 function SendLinkByMail(href) {
 var subject= "Project Website for UCL Systems Engineering Project - Group 35. feedback";
-var body = "I have some feedback about the Design Patterns page: ";
+var body = "I have some feedback about the System Manual (Demo) page: ";
 body += window.location.href;
 body += "";
 var uri = "mailto:zcabjcy@ucl.ac.uk?subject=";
@@ -142,7 +142,7 @@ window.location.href = uri;
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: '/2015/group35/search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Design Patterns">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="System Manual (Demo)">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -355,7 +355,7 @@ window.location.href = uri;
             
             
             
-            <li class="active"><a href="/2015/group35/development/design-patterns/">Design Patterns</a></li>
+            <li><a href="/2015/group35/development/design-patterns/">Design Patterns</a></li>
             
             
             
@@ -413,7 +413,7 @@ window.location.href = uri;
             
             
             
-            <li><a href="/2015/group35/manuals/system-demo/">System Manual (Demo)</a></li>
+            <li class="active"><a href="/2015/group35/manuals/system-demo/">System Manual (Demo)</a></li>
             
             
             
@@ -458,11 +458,13 @@ window.location.href = uri;
     <!-- Content Column -->
     <div class="col-md-9">
         <div class="post-header">
-   <h1 class="post-title-main">Design Patterns</h1>
+   <h1 class="post-title-main">System Manual (Demo)</h1>
 </div>
 
 <div class="post-content">
 
+   
+    <div class="summary">This manual is written for our client to access the INcDb deployed at http://188.166.170.92/.</div>
    
 
     
@@ -492,59 +494,82 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="model-view-controller-mvc">Model View Controller (MVC)</h2>
+  <h3 id="system-specifications">System Specifications</h3>
 
-<p>For INcDb, we implemented Model View Controller to separate the application logic from the user interface. The separation is done by using the Controller to receive input and interacting with the Model and passing the required data to the View.</p>
+<ul>
+  <li>
+    <p>Hosted by Digital Ocean</p>
+  </li>
+  <li>
+    <p>Operating System: Ubuntu 14.04.4 x64</p>
+  </li>
+  <li>
+    <p>Memory: 512 MB</p>
+  </li>
+</ul>
 
-<p>The <strong>Controllers</strong> are found in the path <code class="highlighter-rouge">app/controllers</code>. Each actions in the <code class="highlighter-rouge">controllers</code> are associated with a predefined route. The controller action uses the <strong>Models</strong> found in <code class="highlighter-rouge">app/models</code> to retrieve data from a database. The data is then passed to a <strong>View</strong>, located in the <code class="highlighter-rouge">app/templates/</code>. The view will then present the data to the user in their browser.</p>
+<h3 id="ssh-login">SSH Login</h3>
 
-<p>Example of a Controller action:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>@home_blueprint.route('guide')
-def guide():
-    return render_template('guide.html')
+<div class="highlighter-rouge"><pre class="highlight"><code>ssh deploy@188.166.170.92
 </code></pre>
 </div>
 
-<p>Example of a Model:</p>
+<h3 id="files-in-homedeploy">Files in <code class="highlighter-rouge">/home/deploy/</code></h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>class DecodingSet(db.Model):
-  __tablename__ = 'decoding_set'
-
-  id = db.Column(db.Integer, primary_key=True)
-  analysis_set_id = db.Column(db.Integer,
-                            db.ForeignKey(AnalysisSet.id), nullable=True)
-  analysis_set = db.relationship(AnalysisSet,
-                               backref=db.backref('decoding_set'))
-  name = db.Column(db.String(20))
-  n_images = db.Column(db.Integer)
-  n_voxels = db.Column(db.Integer)
-  is_subsampled = db.Column(db.Boolean)
+<div class="highlighter-rouge"><pre class="highlight"><code>incdb-poc log
 </code></pre>
 </div>
 
-<h2 id="decorators">Decorators</h2>
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">incdb-poc</code> contains the source code for INcDb and the uploaded Dataset.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">log</code> contians log messages from the celery worker.</p>
+  </li>
+</ul>
 
-<p>We used Decorator design pattern to add additional functionality to each view in Flask. A decorator is a function that returns a function. As each view in Flask is a function, we used the <code class="highlighter-rouge">route()</code> and <code class="highlighter-rouge">login_required()</code> decorators to implement routing and access control for the views.</p>
+<h3 id="read-messages-in-log">Read messages in Log</h3>
 
-<h3 id="route-decorator"><code class="highlighter-rouge">route()</code> decorator</h3>
-
-<p><code class="highlighter-rouge">route()</code> is a decorator by Flask that is used to register the a view function for a given URL rule. Using a decorator simplify the code as it apply the routing functionality to the view function that follows it. Although the <code class="highlighter-rouge">flask.add_url_rule()</code> work exactly the same, it requires the name of view function in its parameter. A change in the name of the view function will result in error in routing.</p>
-
-<h3 id="loginrequired-decorator"><code class="highlighter-rouge">login_required()</code> decorator</h3>
-
-<p>To allow only logged in user to create collection and upload Raw Dataset, we apply the <code class="highlighter-rouge">@login_required</code> decorator provided by Flask-Login to redirect user to the login in page if they are not logged in and try to access the page.</p>
-
-<p>The following code snippets show how <code class="highlighter-rouge">route</code> and <code class="highlighter-rouge">login_required</code> decorators are implemented.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>@contribute_blueprint.route('contribute/new', methods=["POST", "GET"])
-@login_required  # Limits access to authenticated users
-def new_collection():
-    """ Allow user to create new collection """
-
-    ...
+<div class="highlighter-rouge"><pre class="highlight"><code>deploy@incdb-ucl: ls incdb-poc/log 
+# celeryd.log 
 </code></pre>
 </div>
+
+<p>To read the latest 100 lines of log messages by celery worker,</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>deploy@incdb-ucl: tail -100 incdb-poc/log/celeryd.log
+</code></pre>
+</div>
+
+<h3 id="terminate-gunicorn-process">Terminate gunicorn process</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>deploy@incdb-ucl: ps aux|grep gunicorn
+# root  ZZZ  X.X  X.X  ... .../python /home/deploy/incdb-poc/venv/bin/gunicorn manage:app
+deploy@incdb-ucl: kill ZZZ
+</code></pre>
+</div>
+
+<h3 id="restart-server">Restart Server</h3>
+
+<p>A bash script at <code class="highlighter-rouge">/root/run_server.sh</code> is used to start the gunicorn and celery process everytime the server reboot.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+
+<span class="nb">cd</span> /home/deploy/incdb-poc
+. venv/bin/activate
+supervisord -c /home/deploy/incdb-poc/supervisord.conf
+gunicorn manage:app
+</code></pre>
+</div>
+
+<h3 id="download-uploaded-raw-dataset-via-scp">Download uploaded Raw Dataset via SCP</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>scp deploy@188.166.170.92:/incdb-poc/uploads/* .
+</code></pre>
+</div>
+
+<p>This will download all the Raw Dataset uploaded by users to the current folder on your local machine.</p>
 
 
 <div class="tags">

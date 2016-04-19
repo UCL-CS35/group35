@@ -5,7 +5,7 @@ sidebar: mydoc_sidebar
 permalink: /testing/
 ---
 
-### Unit Tesing using pytest
+## Unit Tesing using pytest
 
 We tested INcDb on 2 different kind of test cases. 
 

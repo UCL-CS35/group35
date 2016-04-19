@@ -197,6 +197,13 @@ manualssystem:
 
 
  
+manualssystem-demo:
+  title: "System Manual (Demo)"
+  url: /2015/group35/manuals/system-demo/
+  link: <a href="/2015/group35/manuals/system-demo/">System Manual (Demo)</a>
+
+
+ 
 manualsuser:
   title: "User Guide"
   url: /2015/group35/manuals/user/

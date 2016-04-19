@@ -140,6 +140,10 @@ entries:
       url: /manuals/system/
       output: web, pdf
 
+    - title: System Manual (Demo)
+      url: /manuals/system-demo/
+      output: web, pdf
+      
     - title: User Guide
       url: /manuals/user/
       output: web, pdf
