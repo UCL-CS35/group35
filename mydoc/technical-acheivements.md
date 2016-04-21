@@ -38,6 +38,12 @@ For each Component of the Processed Dataset, a row in the Decodings table (in th
 
 ### 5. Background task using Celery and Redis
 
+To improve the user experience and efficiency, we have decided to make the decoding funciton a background task. By running the decoding asynchronously, the user (Dr. Skipper) will be able to turn to other pages of INCDB and continue with other tasks, or assign more decoding tasks for INCDB to work on, instead of having to wait on the page while the long-running task is being completed. 
+
+For implementing background tasks, the Celery task queue and Redis message broker are used. First of all, a Celery Worker as well as the Redis Server must be running (which we have set to start automatically with the server). A task is set to be run asynchronously by setting the method as a Celery Task in Flask, and calling it with a delay() decoration, which then a message is sent to the Redis server, translated and forwarded to the Celery Worker, and pushing that task onto the task queue.
+
+Then the tasks in the task queue are completed in order by the Celery Worker. 
+
 (Explain how is it move to backgound, starting celery workers, running redis server)
 
 ## Dependencies
