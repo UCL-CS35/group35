@@ -1,7 +1,6 @@
 ---
 title: Background
 keywords: background
-last_updated: March 20, 2016
 sidebar: mydoc_sidebar
 permalink: /background/
 ---

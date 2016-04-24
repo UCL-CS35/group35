@@ -1,6 +1,5 @@
 ---
 title: References
-last_updated: March 20, 2016
 summary: "Key materials accessed during the development of INcDb."
 sidebar: mydoc_sidebar
 permalink: /development/references/
@@ -30,4 +29,8 @@ permalink: /development/references/
 
 12. Accessing DB for Celery Tasks - <http://www.prschmid.com/2013/04/using-sqlalchemy-with-celery-tasks.html>
 
-11. !!! NSViewer
+13. NSViewer Demo - <http://pilab.psy.utexas.edu/demos/nsviewer/index.html>
+
+14. AFNI install guide - <https://afni.nimh.nih.gov/.../html/linux_inst_basic.html>
+
+15. Nipype AFNI interface - <http://nipy.org/.../nipype.interfaces.afni.preprocess.html>

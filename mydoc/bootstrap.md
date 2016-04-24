@@ -1,8 +1,5 @@
 ---
 title: Frontend - Bootstrap
-tags: 
-keywords:
-last_updated: March 20, 2016
 sidebar: mydoc_sidebar
 permalink: /research/bootstrap/
 toc: false

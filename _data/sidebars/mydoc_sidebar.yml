@@ -73,6 +73,14 @@ entries:
 
     - title: Deployment
       url: /research/deployment/
+      output: web, 
+
+    - title: Initial Prototype
+      url: /research/prototype/
+      output: web, pdf
+
+    - title: Testing Strategy
+      url: /research/testing-strategy/
       output: web, pdf
 
   - title: Design

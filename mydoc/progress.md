@@ -1,6 +1,5 @@
 ---
 title: Progress
-last_updated: March 20, 2016
 sidebar: mydoc_sidebar
 permalink: /project/progress/
 ---

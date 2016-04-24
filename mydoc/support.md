@@ -1,6 +1,5 @@
 ---
 title: Support
-last_updated: March 20, 2016
 sidebar: mydoc_sidebar
 permalink: /support/
 ---
@@ -17,7 +16,7 @@ This forum is for the community to discuss/enquire about the project.
  src="javascript:void(0)"
  scrolling="no"
  frameborder="0"
- width="900"
+ width="100%"
  height="700"
  style="border:1px solid #ddd;margin-bottom:25px;">
 </iframe>
@@ -28,7 +27,3 @@ This forum is for the community to discuss/enquire about the project.
   "&showsearch=true&showpopout=true&parenturl=" +
   encodeURIComponent(window.location.href);
 </script>
-
-## Feedack on Project
-
-Leave your feedback or comments on the project using the Facebook Comments Plugin below.

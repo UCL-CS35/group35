@@ -1,8 +1,5 @@
 ---
 title: Stage 3 - Photoshop Mockups
-tags: 
-keywords: 
-last_updated: March 20, 2016
 sidebar: mydoc_sidebar
 permalink: /design/mockups/
 ---

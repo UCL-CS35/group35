@@ -1,7 +1,5 @@
 ---
 title: Requirements
-keywords: requirements
-last_updated: March 20, 2016
 summary: "Project Requirements idenitfy for INcDb."
 sidebar: mydoc_sidebar
 permalink: /requirements/

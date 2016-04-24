@@ -104,6 +104,20 @@ researchdeployment:
   link: <a href="/2015/group35/research/deployment/">Deployment</a>
 
 
+ 
+researchprototype:
+  title: "Initial Prototype"
+  url: /2015/group35/research/prototype/
+  link: <a href="/2015/group35/research/prototype/">Initial Prototype</a>
+
+
+ 
+researchtesting-strategy:
+  title: "Testing Strategy"
+  url: /2015/group35/research/testing-strategy/
+  link: <a href="/2015/group35/research/testing-strategy/">Testing Strategy</a>
+
+
 
 
  

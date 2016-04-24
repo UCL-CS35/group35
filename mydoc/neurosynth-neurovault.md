@@ -1,8 +1,5 @@
 ---
 title: Neurosynth & Neurovault
-tags: 
-keywords:
-last_updated: March 20, 2016
 sidebar: mydoc_sidebar
 permalink: /research/neurosynth-neurovault/
 toc: false

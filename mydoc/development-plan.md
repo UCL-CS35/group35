@@ -1,6 +1,5 @@
 ---
 title: Development Plan
-last_updated: March 20, 2016
 sidebar: mydoc_sidebar
 permalink: /development/plan/
 ---

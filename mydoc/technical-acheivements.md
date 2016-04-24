@@ -1,6 +1,5 @@
 ---
 title: Technical Achievements
-last_updated: March 20, 2016
 sidebar: mydoc_sidebar
 permalink: /development/technical-acheivements/
 ---
@@ -34,17 +33,21 @@ For each Component of the Processed Dataset, a row in the Decodings table (in th
 
 ### 4. Neurosynth Viewer
    
-(Explain setup, selection of Components, merging)
+The main aspect of the web application is to provide a way to view different brain images. This was done using the Neurosynth Viewer framework to view and interact with brain imaging data on a web page, as well as Nipype + AFNI to prepare the imaging data for Terms for a specific Movie.
+
+The Neurosynth Viewer is implemented within the HTML code as part of a Javascript block. Since this is a Python Flask application, macro fields are added as a placeholder for the location of the brain imaging data to help load the relevant images for dynamically generated web pages. These macro fields run Python functions written earlier that, when given the name of a Component or Movie, it will search within the directories in the server and send the files as an attachment to the Viewer.
+
+Part of the functionality is assisted by the AFNI toolset, which makes it possible to merge multiple brain images into one image. This is useful for deriving a brain image for an individual Term for a specific Movie. The selection of these brain images is done by querying through the list if Components, and identifying the Components for the specific Movie and Term. This is saved in an array and fed to the AFNI toolset to merge.
+
+This merging process is done after the decoding process upon upload by the admin. The Nipype Python package serves as an interface to provide Python functions to easily interact with the AFNI toolset.
 
 ### 5. Background task using Celery and Redis
 
-To improve the user experience and efficiency, we have decided to make the decoding funciton a background task. By running the decoding asynchronously, the user (Dr. Skipper) will be able to turn to other pages of INCDB and continue with other tasks, or assign more decoding tasks for INCDB to work on, instead of having to wait on the page while the long-running task is being completed. 
+To improve the user experience and efficiency, we have decided to make the decoding funciton a background task. By running the decoding asynchronously, the user (Dr. Skipper) will be able to turn to other pages of INcDb and continue with other tasks, or assign more decoding tasks for INcDb to work on, instead of having to wait on the page while the long-running task is being completed. 
 
 For implementing background tasks, the Celery task queue and Redis message broker are used. First of all, a Celery Worker as well as the Redis Server must be running (which we have set to start automatically with the server). A task is set to be run asynchronously by setting the method as a Celery Task in Flask, and calling it with a delay() decoration, which then a message is sent to the Redis server, translated and forwarded to the Celery Worker, and pushing that task onto the task queue.
 
 Then the tasks in the task queue are completed in order by the Celery Worker. 
-
-(Explain how is it move to backgound, starting celery workers, running redis server)
 
 ## Dependencies
 

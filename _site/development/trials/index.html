@@ -295,6 +295,20 @@ window.location.href = uri;
             
             
             
+            
+            
+            <li><a href="/2015/group35/research/prototype/">Initial Prototype</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/2015/group35/research/testing-strategy/">Testing Strategy</a></li>
+            
+            
+            
+            
         </ul>
         
         
@@ -508,6 +522,24 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="implementing-neurosynth-viewer">Implementing Neurosynth Viewer</h2>
 
+<ul>
+  <li>
+    <p>The initial problem that surfaced was to how web pages that consisted of the Neurosynth Viewer were dynamically created depending on the Term/Component selected. This presented a challenge on how we could feed the location of the relevant Component to the Viewer script in order to load the correct brain images</p>
+  </li>
+  <li>
+    <p>What made part of the implementation easy for us was Flask’s ability to generate macro fields to add Python functions within the HTML code that provided the location of the brain images for the relevant page. This made it easy to embedded within the Javascript code for the Viewer.</p>
+  </li>
+  <li>
+    <p>One issue we had in particular was loading specific brain images that were in 64-bit format, which had an incompatibility issue with the Viewer. This was resolved by regenerating the Viewer code using the CoffeeScript libraries provided by the GitHub repository.</p>
+  </li>
+  <li>
+    <p>Another particular issue we had was the brain image generation on Terms for an individual Movie. This involved the process of merging relevant brain images into one.</p>
+  </li>
+  <li>
+    <p>Our initial approach for this was to use an FSL interface to merge brain images into a 4D brain image. However this still rose incompatibility issues with the Viewer. This was later resolved with our client recommending the AFNI interface to merge the brain images into one that can be read by the viewer.</p>
+  </li>
+</ul>
+
 
 <div class="tags">
     
@@ -523,7 +555,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2016 UCL Systems Engineering Project - Group 35.. All rights reserved. <br />
-<p>Page last updated:</span> March 20, 2016<br/> Site last generated: Apr 21, 2016
+ Site last generated: Apr 24, 2016
                 </div>
             </div>
 </footer>

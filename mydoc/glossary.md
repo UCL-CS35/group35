@@ -1,8 +1,5 @@
 ---
 title: Glossary 
-tags: 
-keywords:
-last_updated: March 20, 2016
 summary: "Define vocublary for the project so that the group and the client uses the same definition during the discussion of the project"
 sidebar: mydoc_sidebar
 permalink: /glossary/

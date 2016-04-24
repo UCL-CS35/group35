@@ -1,6 +1,5 @@
 ---
 title: Project Repositories
-last_updated: March 20, 2016
 sidebar: mydoc_sidebar
 permalink: /project/repositories/
 ---
