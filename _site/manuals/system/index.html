@@ -558,6 +558,46 @@ pip install -r requirements.txt
 </code></pre>
 </div>
 
+<h3 id="installing-afni--nipype-merging">Installing AFNI + Nipype (Merging)</h3>
+
+<p>Before proceeding, it is important to note that the AFNI toolkit is currently incompatible on Windows. In order to test the merging process, the easiest suggestion is to install a Virtual Machine software (such as VirutalBox), install a free Linux distribution and run Neurosynth within the system.</p>
+
+<h4 id="afni">AFNI</h4>
+
+<p>The AFNI toolkit consists of various functions to read and manipulate brain imaging data (in this case, merging). To install the AFNI tool kit, follow the link below:</p>
+
+<ul>
+  <li><a href="https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/background_install/download_links.html">https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/background_install/download_links.html</a></li>
+</ul>
+
+<p>Under section B, download the package for the relevant operating system you are running the kit from, and follow this link:</p>
+
+<ul>
+  <li><a href="https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/background_install/install_instructs/index.html">https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/background_install/install_instructs/index.html</a></li>
+</ul>
+
+<p>For complete installation instructions. It also to note that this process will require modifying your system’s shell (BASH or tcsh) in order to run the AFNI toolkit within Terminal. If you have completed this process and are able to run the command ‘afni’ within the Terminal, continue to the next section.</p>
+
+<h4 id="nipype">Nipype</h4>
+
+<p>Nipype serves as a Python interface for many of AFNI’s functions (since it is not natively written in Python) in order to easily integrate the toolkit within Flask. To install nipype, run:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pip install nipype
+</code></pre>
+</div>
+
+<p>To install the Nipype package. Nipype also requires additional dependencies to be installed as described in the link below under the ‘Dependencies’ section</p>
+
+<ul>
+  <li><a href="http://nipy.org/nipype/users/install.html">http://nipy.org/nipype/users/install.html</a></li>
+</ul>
+
+<p>You can test your Nipype installation using the command :</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>python -c "import nipype; nipype.test()"
+</code></pre>
+</div>
+
 <h3 id="setting-up-incdb">Setting Up INcDb</h3>
 
 <p>Run Celery Work</p>

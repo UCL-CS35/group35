@@ -33,6 +33,36 @@ Install required Python packages
 	workon incdb
 	pip install -r requirements.txt
 
+### Installing AFNI + Nipype (Merging)
+
+Before proceeding, it is important to note that the AFNI toolkit is currently incompatible on Windows. In order to test the merging process, the easiest suggestion is to install a Virtual Machine software (such as VirutalBox), install a free Linux distribution and run Neurosynth within the system.
+
+#### AFNI
+
+The AFNI toolkit consists of various functions to read and manipulate brain imaging data (in this case, merging). To install the AFNI tool kit, follow the link below:
+
+* <https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/background_install/download_links.html>
+
+Under section B, download the package for the relevant operating system you are running the kit from, and follow this link:
+
+* <https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/background_install/install_instructs/index.html>
+
+For complete installation instructions. It also to note that this process will require modifying your system’s shell (BASH or tcsh) in order to run the AFNI toolkit within Terminal. If you have completed this process and are able to run the command ‘afni’ within the Terminal, continue to the next section.
+
+#### Nipype
+
+Nipype serves as a Python interface for many of AFNI’s functions (since it is not natively written in Python) in order to easily integrate the toolkit within Flask. To install nipype, run:
+
+	pip install nipype
+
+To install the Nipype package. Nipype also requires additional dependencies to be installed as described in the link below under the ‘Dependencies’ section
+
+* <http://nipy.org/nipype/users/install.html>
+
+You can test your Nipype installation using the command :
+	
+	python -c "import nipype; nipype.test()"
+
 ### Setting Up INcDb
 
 Run Celery Work
