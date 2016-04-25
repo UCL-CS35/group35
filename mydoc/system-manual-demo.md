@@ -8,7 +8,7 @@ permalink: /manuals/system-demo/
 
 ### System Specifications
 
-* Hosted by Digital Ocean
+* Hosted by [Digital Ocean](https://www.digitalocean.com/)
 
 * Operating System: Ubuntu 14.04.4 x64
 
@@ -59,6 +59,30 @@ To read the latest 100 lines of log messages by celery worker,
 	deploy@incdb-ucl: ps aux|grep gunicorn
 	# root  ZZZ  X.X  X.X  ... .../python /home/deploy/incdb-poc/venv/bin/gunicorn manage:app
 	deploy@incdb-ucl: kill ZZZ
+
+### Update FAQ
+
+The data for FAQ is stored as in a JSON format at `/home/deploy/incdb-poc/data/faq.json`.
+
+	{
+	  "sections": [
+	    {
+	      "name": "Overview",
+	      "questions": [
+	        {
+	          "q": "What is Internet Neurocinematics Database?",
+	          "a": "INcDb is a platform for ..."
+	        },
+	        {
+	          "q": "Question here...",
+	          "a": "Answer here..."
+	        }
+	      ]
+	    }
+	  ]
+	}a
+
+To update the questions and answers, simply just add the data according to the format as shown above.
 
 ### Download uploaded Raw Dataset via SCP
 

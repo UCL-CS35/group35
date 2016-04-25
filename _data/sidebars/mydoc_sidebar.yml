@@ -18,12 +18,16 @@ entries:
       url: /background/
       output: web, pdf
 
-    - title: Requriements
+    - title: Requirements
       url: /requirements/
       output: web, pdf
 
     - title: Use Cases
       url: /use-cases/
+      output: web, pdf
+
+    - title: Evaluation
+      url: /evaluation/
       output: web, pdf
 
     - title: Glossary

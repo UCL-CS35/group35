@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Project Requirements idenitfy for INcDb.">
 <meta name="keywords" content=" ">
-<title>Requirements  | Project Website for UCL Systems Engineering Project - Group 35.</title>
+<title>Requirements  | Project Website for UCL Systems Engineering Project - Group 35</title>
 <link rel="stylesheet" href="/2015/group35/css/syntax.css">
 
 
@@ -114,7 +114,7 @@
 			<!-- Send feedback function -->
 <script>
 function SendLinkByMail(href) {
-var subject= "Project Website for UCL Systems Engineering Project - Group 35. feedback";
+var subject= "Project Website for UCL Systems Engineering Project - Group 35 feedback";
 var body = "I have some feedback about the Requirements page: ";
 body += window.location.href;
 body += "";
@@ -197,7 +197,7 @@ window.location.href = uri;
             
             
             
-            <li class="active"><a href="/2015/group35/requirements/">Requriements</a></li>
+            <li class="active"><a href="/2015/group35/requirements/">Requirements</a></li>
             
             
             
@@ -205,6 +205,13 @@ window.location.href = uri;
             
             
             <li><a href="/2015/group35/use-cases/">Use Cases</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/2015/group35/evaluation/">Evaluation</a></li>
             
             
             
@@ -518,16 +525,19 @@ $('#toc').on('click', 'a', function() {
 
 <ul>
   <li>
-    <p>The Repository is live at <a href="http://188.166.170.92/">http://188.166.170.92/</a>.</p>
+    <p>The client agree that Requirements No. 9 and No. 43 are not necessary and hence exlcuded from the final requirements.</p>
   </li>
   <li>
-    <p>The client agree that Requirements No. 9 - “The Repository shall display the 3-axis average image of all brain images for a specific Movie.” is not necessary and hence exlcuded from the final requirements.</p>
-  </li>
-  <li>
-    <p>With the client’s approval, Requirements No. 48 and 49 are implemented with a web interface instead of command line.</p>
-  </li>
-  <li>
-    <p>Requirements No. 37, 41, 43 (pending discussion with client)</p>
+    <p>With the client’s approval,</p>
+
+    <ul>
+      <li>
+        <p>Requirements No. 48 and 49 are implemented with a web interface instead of command line.</p>
+      </li>
+      <li>
+        <p>Requirements No. 37 are implemented by disabling user to delete their datasets when the Processed Dataset is uploaded instead of the 24 hours period.</p>
+      </li>
+    </ul>
   </li>
 </ul>
 
@@ -882,7 +892,7 @@ $('#toc').on('click', 'a', function() {
 	  <tr>
 	    <td>37</td>
 	    <td>Data Submission</td>
-	    <td>The Repository shall allow User to delete his/her uploaded Datasets during a grace period of 24 hours.</td>
+	    <td>The Repository shall allow User to delete his/her uploaded Datasets <span style="text-decoration:line-through">during a grace period of 24 hours</span> before the admin upload a Processed Dataset for the collection.</td>
 	    <td>Functional</td>
 	    <td>Must</td>
 	    <td>All</td>
@@ -932,14 +942,6 @@ $('#toc').on('click', 'a', function() {
 	    </td>
 	    <td>Functional</td>
 	    <td>Must</td>
-	    <td>All</td>
-	  </tr>
-	  <tr>
-	    <td>43</td>
-	    <td>User Management</td>
-	    <td>The Repository shall allow User to delete account.</td>
-	    <td>Functional</td>
-	    <td>Should</td>
 	    <td>All</td>
 	  </tr>
 	  <tr>
@@ -1430,7 +1432,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2016 UCL Systems Engineering Project - Group 35.. All rights reserved. <br />
- Site last generated: Apr 24, 2016
+ Site last generated: Apr 25, 2016
                 </div>
             </div>
 </footer>

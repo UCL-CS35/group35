@@ -63,7 +63,9 @@ The group will be developing the data repository using the open-source code asso
 
 ## Project Video
 
-<iframe style="border:1px solid #ddd;" width="560" height="315" src="https://www.youtube.com/embed/KOsu35xp_eA" frameborder="0" allowfullscreen></iframe>
+<iframe style="border:1px solid #ddd;margin-bottom:10px;" width="728" height="410" src="https://www.youtube.com/embed/H4S7P6ZoIOo" frameborder="0" allowfullscreen></iframe>
+
+Project Introduction (COMP204P) - <https://www.youtube.com/watch?v=KOsu35xp_eA>
 
 ## The Team
 

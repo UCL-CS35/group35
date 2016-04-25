@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="This manual is written for our client to access the INcDb deployed at http://188.166.170.92/.">
 <meta name="keywords" content=" ">
-<title>System Manual (Demo)  | Project Website for UCL Systems Engineering Project - Group 35.</title>
+<title>System Manual (Demo)  | Project Website for UCL Systems Engineering Project - Group 35</title>
 <link rel="stylesheet" href="/2015/group35/css/syntax.css">
 
 
@@ -114,7 +114,7 @@
 			<!-- Send feedback function -->
 <script>
 function SendLinkByMail(href) {
-var subject= "Project Website for UCL Systems Engineering Project - Group 35. feedback";
+var subject= "Project Website for UCL Systems Engineering Project - Group 35 feedback";
 var body = "I have some feedback about the System Manual (Demo) page: ";
 body += window.location.href;
 body += "";
@@ -197,7 +197,7 @@ window.location.href = uri;
             
             
             
-            <li><a href="/2015/group35/requirements/">Requriements</a></li>
+            <li><a href="/2015/group35/requirements/">Requirements</a></li>
             
             
             
@@ -205,6 +205,13 @@ window.location.href = uri;
             
             
             <li><a href="/2015/group35/use-cases/">Use Cases</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/2015/group35/evaluation/">Evaluation</a></li>
             
             
             
@@ -512,7 +519,7 @@ $('#toc').on('click', 'a', function() {
 
 <ul>
   <li>
-    <p>Hosted by Digital Ocean</p>
+    <p>Hosted by <a href="https://www.digitalocean.com/">Digital Ocean</a></p>
   </li>
   <li>
     <p>Operating System: Ubuntu 14.04.4 x64</p>
@@ -588,6 +595,32 @@ deploy@incdb-ucl: kill ZZZ
 </code></pre>
 </div>
 
+<h3 id="update-faq">Update FAQ</h3>
+
+<p>The data for FAQ is stored as in a JSON format at <code class="highlighter-rouge">/home/deploy/incdb-poc/data/faq.json</code>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"sections"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Overview"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"questions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"q"</span><span class="p">:</span><span class="w"> </span><span class="s2">"What is Internet Neurocinematics Database?"</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"a"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INcDb is a platform for ..."</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"q"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Question here..."</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"a"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Answer here..."</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="err">a</span><span class="w">
+</span></code></pre>
+</div>
+
+<p>To update the questions and answers, simply just add the data according to the format as shown above.</p>
+
 <h3 id="download-uploaded-raw-dataset-via-scp">Download uploaded Raw Dataset via SCP</h3>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>scp deploy@188.166.170.92:/incdb-poc/uploads/* .
@@ -611,7 +644,7 @@ deploy@incdb-ucl: kill ZZZ
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2016 UCL Systems Engineering Project - Group 35.. All rights reserved. <br />
- Site last generated: Apr 24, 2016
+ Site last generated: Apr 25, 2016
                 </div>
             </div>
 </footer>

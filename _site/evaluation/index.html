@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" ">
-<title>Testing Strategy  | Project Website for UCL Systems Engineering Project - Group 35</title>
+<title>Evaluation  | Project Website for UCL Systems Engineering Project - Group 35</title>
 <link rel="stylesheet" href="/2015/group35/css/syntax.css">
 
 
@@ -115,7 +115,7 @@
 <script>
 function SendLinkByMail(href) {
 var subject= "Project Website for UCL Systems Engineering Project - Group 35 feedback";
-var body = "I have some feedback about the Testing Strategy page: ";
+var body = "I have some feedback about the Evaluation page: ";
 body += window.location.href;
 body += "";
 var uri = "mailto:zcabjcy@ucl.ac.uk?subject=";
@@ -142,7 +142,7 @@ window.location.href = uri;
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: '/2015/group35/search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Testing Strategy">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Evaluation">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -211,7 +211,7 @@ window.location.href = uri;
             
             
             
-            <li><a href="/2015/group35/evaluation/">Evaluation</a></li>
+            <li class="active"><a href="/2015/group35/evaluation/">Evaluation</a></li>
             
             
             
@@ -311,7 +311,7 @@ window.location.href = uri;
             
             
             
-            <li class="active"><a href="/2015/group35/research/testing-strategy/">Testing Strategy</a></li>
+            <li><a href="/2015/group35/research/testing-strategy/">Testing Strategy</a></li>
             
             
             
@@ -479,7 +479,7 @@ window.location.href = uri;
     <!-- Content Column -->
     <div class="col-md-9">
         <div class="post-header">
-   <h1 class="post-title-main">Testing Strategy</h1>
+   <h1 class="post-title-main">Evaluation</h1>
 </div>
 
 <div class="post-content">
@@ -513,27 +513,15 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>This page details the testing strategies that we will be adpoting to ensure the our PoC will be working properly.</p>
+  <h2 id="clients-evaluation">Client’s Evaluation</h2>
 
-<h2 id="unit-testing">Unit Testing</h2>
-<p>We had conducted research on Flask-Testing and pytest for our unit testing strategy. Flask-Testing is a Flask extension that provides us with a set of test utilities tools to conduct unit test on our codes. Pytest is a mature features-rich testing tool that can be used on any Python programs. We decided to use pytest because it has comprehensive documentation and there are plenty of troubleshoot resources available online.</p>
+<p><img style="max-width:100%" src="/2015/group35/images/client_evaluation.jpg" /></p>
 
-<p>We need to add <code class="highlighter-rouge">pytest</code> and <code class="highlighter-rouge">pytest-flask</code> to our requirements.txt and then run <code class="highlighter-rouge">pip install -r requirements.txt</code>. Test cases are written in individual Python file located at <code class="highlighter-rouge">/app-name/tests/</code>. A shell script was written to run the test cases.</p>
+<p>Our client was satisfied with the final product and felt that it was exactly what he had in mind at the start of the project. He think that the application was well designed and met all his requirements. His only concern was about the extensibility of the project as he wish to incorporate new features in the future. As the team applied Model View Controller pattern which separate the application logic from the user interface and data model, new features can be easily added to the existing application.</p>
 
-<h2 id="acceptance-testing">Acceptance Testing</h2>
-<p>Acceptance tests are used to verify that a story (requirement) is complete. The tests are described in plain English and ensures the software, as a whole, is feature complete.</p>
+<h2 id="teams-evaluation">Team’s Evaluation</h2>
 
-<p>For acceptance testing, we will be using Lettuce. The test cases will be written in Gherkin Syntax. We need to write 2 files, Feature and Step. Feature files are written in plain English, and specify the area of the application that the tests cover. It include 3 key areas, Feature, Background and Scenario. Feature is a descripion of the feature to be tested. Background is executed before Scenario and setup the necessary conditions before running the test. Scenario define the test. Step file match each line in the Scenario to the Python code through Regular Expressions.</p>
-
-<h2 id="web-testing">Web Testing</h2>
-<p>Besides conducting unit testing and acceptance, we will be conducting web testing using Selenium. It a toolkit that allows us to run our web application on a selected browser and conduct test case on it. We will be using Selenium IDE which record the sequence of user’s actions and clicks in each test case. We will then run all the suite of all the test cases to start the automated testing process.</p>
-
-<h2 id="unit-testing-on-prototype">Unit Testing on Prototype</h2>
-<p>For our Term 1 prototype, we ran a few test cases checking the functionality of user management. The test cases include tesing if user can change password, edit their title, and first name and last name. The source code for the test cases are located at <a href="https://github.com/UCL-CS35/incdb-user/blob/master/tests/test_user_management.py">https://github.com/UCL-CS35/incdb-user/blob/master/tests/test_user_management.py</a>.</p>
-
-<p>To run the test, at the project folder, type <code class="highlighter-rouge">./runtests.sh</code>. The image below is the result of running the test cases.</p>
-
-<p><img src="/2015/group35/images/research/testresult.png" alt="Test Result" /></p>
+<p>We felt that the we achieved our objective for the project by delivering a usable prototype and manage to launch it on an actual remote server. We were able to fulfil most of the initial requirements. We also managed to maintain a good relationship with our client and received his support on the suggestions we made to the requirements during the development phase. Our testing feedbacks were mostly positive with just a few minor issues on our design. With further development in mind, we managed to keep our code structure simple and ensure that it is easy to understand too.</p>
 
 
 <div class="tags">

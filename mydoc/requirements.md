@@ -13,13 +13,13 @@ The following list of requirements had been identified by the group and approved
 
 ## Final Requirements
 
-* The Repository is live at <a href="http://188.166.170.92/">http://188.166.170.92/</a>.
+* The client agree that Requirements No. 9 and No. 43 are not necessary and hence exlcuded from the final requirements.
 
-* The client agree that Requirements No. 9 - "The Repository shall display the 3-axis average image of all brain images for a specific Movie." is not necessary and hence exlcuded from the final requirements.
+* With the client's approval, 
+	 
+  * Requirements No. 48 and 49 are implemented with a web interface instead of command line.
 
-* With the client's approval, Requirements No. 48 and 49 are implemented with a web interface instead of command line.
-
-* Requirements No. 37, 41, 43 (pending discussion with client)
+  * Requirements No. 37 are implemented by disabling user to delete their datasets when the Processed Dataset is uploaded instead of the 24 hours period.
 
 <table class="table">
 	<thead>
@@ -372,7 +372,7 @@ The following list of requirements had been identified by the group and approved
 	  <tr>
 	    <td>37</td>
 	    <td>Data Submission</td>
-	    <td>The Repository shall allow User to delete his/her uploaded Datasets during a grace period of 24 hours.</td>
+	    <td>The Repository shall allow User to delete his/her uploaded Datasets <span style="text-decoration:line-through">during a grace period of 24 hours</span> before the admin upload a Processed Dataset for the collection.</td>
 	    <td>Functional</td>
 	    <td>Must</td>
 	    <td>All</td>
@@ -422,14 +422,6 @@ The following list of requirements had been identified by the group and approved
 	    </td>
 	    <td>Functional</td>
 	    <td>Must</td>
-	    <td>All</td>
-	  </tr>
-	  <tr>
-	    <td>43</td>
-	    <td>User Management</td>
-	    <td>The Repository shall allow User to delete account.</td>
-	    <td>Functional</td>
-	    <td>Should</td>
 	    <td>All</td>
 	  </tr>
 	  <tr>

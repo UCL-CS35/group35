@@ -26,7 +26,7 @@ We used Loadster to test how our live demo handle multiple concurrent users. The
 
 It was not surprising that the brain image file (anatomical.nii.gz?.nii.gz) has the highest average response times due to its larger file size. The average response times were below 0.2s for basic pages like the home, movie and term pages proved that INcDb was able to load smooth and quickly. 
 
-## User Testing
+## User Acceptance Testing
 
 ### Testing Strategy
 
@@ -71,15 +71,13 @@ We design our test by identifying the features to be tested, the features not to
 
 #### Test Environment
 
-* We let the testers use the app installed on one of our member’s iPhone 6. The status of the app is reset after each test.
-
-* Besides that, we brought along a laptop and ask the testers to sign in their Dropbox account so that they can witness the creation of a new Excel file (the exportation of the data) right away.
+* We let the testers use the demo version of INcDb at <http://188.166.170.92/> using Google Chrome Version 50.0.2661.86 in Incognito mode. The website is reset after each test.
 
 ### Targeted Tester
 
 * Computer Science Students - We chose CS students, who are experienced in web development, as they know what to expect during an app testings and they are able to find flaws and fault in our app quickly ­ in fact that’s one of the main purpose of testing so that the app can be improved.
 
-* Neuroscientists - The choice is made because they are the target users and are experienced in interacting with brain images. Their opinions matter especially on whether INcDb provide a reliable way to contribute their data.
+* Neuroscientist - The choice is made because neuroscientist are the target users and are experienced in interacting with the brain images. Their opinions matter especially on whether INcDb provide a reliable way to contribute their data.
 
 ### Response Received
 
@@ -101,5 +99,5 @@ Overall, we received positive feedbacks that the demo version of INcDb are able 
 
 The feedback on the design of INcDb was useful to further polish our website to make it ready for the use by public. The suggestion for a more detailed Disclaimer Policy will be further discussed with our client and necessary changes will be made once he draft the new policy. However, the complaint on the long duration taken during the upload process cannot be resolved on our side. As the dataset are usually more than a gigabyte at least, the upload process will take a while even if the user has good connection speed. Beside having a progress bar to update the user on the progress of the uploading process, we will also look into including messages during the uploading process to remind the users to be patient with the uploading.
 
-The User Acceptance Testing has proved to be useful in identifying design and process issues that are not picked up by the Unit Testing and Load Stress Test. Having real users to test the application, it gave us an insight of how the users use the application and help us rectify issues and prepare the application to be used by the general public.
+The User Acceptance Testing, which has real users to test the application, gave us an insight of how the users use the application and help us identify issues they faced and prepare the application to be used by the general public.
 

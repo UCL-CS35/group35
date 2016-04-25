@@ -18,9 +18,9 @@ background:
 
  
 requirements:
-  title: "Requriements"
+  title: "Requirements"
   url: /2015/group35/requirements/
-  link: <a href="/2015/group35/requirements/">Requriements</a>
+  link: <a href="/2015/group35/requirements/">Requirements</a>
 
 
  
@@ -28,6 +28,13 @@ use-cases:
   title: "Use Cases"
   url: /2015/group35/use-cases/
   link: <a href="/2015/group35/use-cases/">Use Cases</a>
+
+
+ 
+evaluation:
+  title: "Evaluation"
+  url: /2015/group35/evaluation/
+  link: <a href="/2015/group35/evaluation/">Evaluation</a>
 
 
  
